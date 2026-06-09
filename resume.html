@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sehal Maheshwari — Resume</title>
+  <style>
+    @media print {
+      .no-print { display: none !important; }
+      body { padding: 0; margin: 0; }
+      .page { padding: 28px 36px; }
+    }
+    @page { margin: 0.5in; }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10.5pt;
+      color: #111;
+      background: #f5f5f5;
+      line-height: 1.42;
+    }
+
+    .no-print {
+      background: #5A9060;
+      color: white;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      font-size: 0.9rem;
+      font-family: Arial, sans-serif;
+    }
+    .no-print button {
+      background: white;
+      color: #5A9060;
+      border: none;
+      padding: 8px 22px;
+      border-radius: 100px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 0.88rem;
+    }
+    .no-print a { color: white; text-decoration: underline; font-size: 0.88rem; }
+
+    .page {
+      max-width: 780px;
+      margin: 20px auto;
+      background: white;
+      padding: 36px 44px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+    }
+    @media print { .page { box-shadow: none; margin: 0; } }
+
+    /* Header */
+    .r-head { border-bottom: 2.5px solid #5A9060; padding-bottom: 14px; margin-bottom: 18px; }
+    .r-name  { font-size: 22pt; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 3px; }
+    .r-title { font-size: 10.5pt; color: #5A9060; font-weight: 700; margin-bottom: 9px; }
+    .r-contact {
+      font-size: 9.2pt; color: #444;
+      display: flex; flex-wrap: wrap; gap: 3px 0; align-items: center;
+    }
+    .r-contact span { padding: 0 10px; border-right: 1px solid #ccc; }
+    .r-contact span:first-child { padding-left: 0; }
+    .r-contact span:last-child  { border-right: none; }
+    .r-contact a { color: #444; }
+
+    /* Section */
+    .sec { margin-bottom: 16px; }
+    .sec-title {
+      font-size: 9.5pt; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.09em; color: #5A9060;
+      border-bottom: 1px solid #C5DCC5; padding-bottom: 3px; margin-bottom: 10px;
+    }
+
+    /* Summary */
+    .summary { font-size: 10pt; color: #333; line-height: 1.55; }
+
+    /* Experience item */
+    .ei { margin-bottom: 13px; }
+    .ei:last-child { margin-bottom: 0; }
+    .ei-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .ei-co   { font-weight: 700; font-size: 10.5pt; }
+    .ei-date { font-size: 9pt; color: #555; white-space: nowrap; }
+    .ei-role { font-size: 10pt; color: #5A9060; font-weight: 700; font-style: italic; margin: 1px 0 5px; }
+    .ei-ul   { padding-left: 16px; }
+    .ei-ul li { font-size: 10pt; color: #333; line-height: 1.48; margin-bottom: 3px; }
+
+    /* Projects */
+    .pi { margin-bottom: 12px; }
+    .pi:last-child { margin-bottom: 0; }
+    .pi-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .pi-name { font-weight: 700; font-size: 10.5pt; }
+    .pi-link { font-size: 9pt; color: #5A9060; }
+    .pi-sub  { font-size: 10pt; color: #5A9060; font-style: italic; font-weight: 700; margin: 1px 0 5px; }
+    .pi-ul   { padding-left: 16px; }
+    .pi-ul li { font-size: 10pt; color: #333; line-height: 1.48; margin-bottom: 3px; }
+
+    /* Skills table */
+    .sk-table { width: 100%; border-collapse: collapse; }
+    .sk-table td { font-size: 10pt; padding: 3px 0; vertical-align: top; }
+    .sk-table td:first-child { font-weight: 700; color: #222; width: 148px; padding-right: 10px; white-space: nowrap; }
+
+    /* Education */
+    .edu-item { margin-bottom: 9px; }
+    .edu-item:last-child { margin-bottom: 0; }
+    .edu-top  { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .edu-co   { font-weight: 700; font-size: 10.5pt; }
+    .edu-date { font-size: 9pt; color: #555; white-space: nowrap; }
+    .edu-det  { font-size: 10pt; color: #333; }
+
+    /* Certs */
+    .cert-item { font-size: 10pt; color: #333; margin-bottom: 4px; }
+
+    @media (max-width: 600px) {
+      .page { padding: 20px 18px; }
+      .ei-top, .pi-top, .edu-top { flex-direction: column; gap: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="no-print">
+  <span>ATS-Optimized Resume &nbsp;·&nbsp; BA · Product Analyst · APM Roles</span>
+  <button onclick="window.print()">⬇ Save as PDF</button>
+  <a href="index.html">← Back to Portfolio</a>
+</div>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="r-head">
+    <div class="r-name">Sehal Maheshwari</div>
+    <div class="r-title">Business Analyst · Product Analyst · Associate Product Manager</div>
+    <div class="r-contact">
+      <span>Ahmedabad, India</span>
+      <span>+91 92651 08149</span>
+      <span><a href="mailto:maheshwarisehal27@gmail.com">maheshwarisehal27@gmail.com</a></span>
+      <span><a href="https://linkedin.com/in/sehal-maheshwari-738091260">linkedin.com/in/sehal-maheshwari-738091260</a></span>
+      <span><a href="https://github.com/sehal27">github.com/sehal27</a></span>
+      <span><a href="https://sehal27.github.io">sehal27.github.io</a></span>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="sec">
+    <div class="sec-title">Professional Summary</div>
+    <p class="summary">
+      Final-year Computer Engineering student at PDEU (8.79 CGPA) with hands-on experience as a Business Analyst intern — owning end-to-end requirements gathering, BRD/FRD authoring, sprint management, and stakeholder communication across enterprise and SaaS products. Complemented by data analytics experience (88% accuracy ML model, HR attrition analysis for 1,435 employees) and a track record of shipping production-grade full-stack applications independently. Seeking BA, Product Analyst, or APM roles where technical depth meets business strategy.
+    </p>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="sec">
+    <div class="sec-title">Professional Experience</div>
+
+    <div class="ei">
+      <div class="ei-top">
+        <span class="ei-co">Aveosoft Technologies</span>
+        <span class="ei-date">Jan 2026 – May 2026 · Ahmedabad, India</span>
+      </div>
+      <div class="ei-role">Business Analyst Intern</div>
+      <ul class="ei-ul">
+        <li>Conducted on-site client discovery from Day 2 — led stakeholder interviews and site visits to map end-to-end workflows for a new enterprise Site Management System</li>
+        <li>Authored BRD, FRD, system architecture documentation, process flow diagrams, and HTML wireframes from scratch for a greenfield enterprise platform</li>
+        <li>Audited existing documentation for Pixally CRM (a HoneyBook competitor for photographers) — identified 30+ critical requirement gaps and missing edge cases across product modules</li>
+        <li>Owned the sprint lifecycle end-to-end: wrote user stories in Flowlu, assigned to developers, unblocked technical queries, managed QA reviews, and coordinated delivery cycles</li>
+        <li>Rebuilt subscription module requirements from near-zero — authored 200+ edge cases and test cases; researched and fully documented Rewardful affiliate API integration plan</li>
+        <li>Participated in client meetings to clarify ambiguous product flows, updated FRD and Figma prototypes in real time, ensuring zero information loss in developer handoffs</li>
+      </ul>
+    </div>
+
+    <div class="ei">
+      <div class="ei-top">
+        <span class="ei-co">Cybersurf (India) Pvt Ltd</span>
+        <span class="ei-date">May 2025 – Jul 2025 · Ahmedabad, India</span>
+      </div>
+      <div class="ei-role">Data Analyst Intern</div>
+      <ul class="ei-ul">
+        <li>Designed and deployed a traffic prediction model for Ahmedabad Municipal Corporation using pincode-level and weather data — achieved 88% accuracy with Random Forest Classifier</li>
+        <li>Analyzed HR dataset for 1,435 employees, identified attrition patterns, and delivered actionable insights projected to reduce employee turnover by 15%</li>
+        <li>Cleaned and preprocessed 10,000+ rows of raw data, improving data quality and boosting model performance by 98%</li>
+      </ul>
+    </div>
+
+    <div class="ei">
+      <div class="ei-top">
+        <span class="ei-co">Elixir Foundation</span>
+        <span class="ei-date">Jun 2023 – Jul 2023 · Ahmedabad, India</span>
+      </div>
+      <div class="ei-role">Social Intern</div>
+      <ul class="ei-ul">
+        <li>Led the Thol Project under UNESCO umbrella — community mobilization for plastic-free initiative; managed fundraising, grant writing, and CSR stakeholder engagement</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="sec">
+    <div class="sec-title">Projects</div>
+
+    <div class="pi">
+      <div class="pi-top">
+        <span class="pi-name">BLP Inventory ERP — Full-Stack Manufacturing &amp; Sales Platform</span>
+        <span class="pi-link">blp-inventory.vercel.app</span>
+      </div>
+      <div class="pi-sub">Next.js · TypeScript · Prisma · PostgreSQL (Neon) · Vercel · Python</div>
+      <ul class="pi-ul">
+        <li>Built and deployed an end-to-end ERP for a PVC pipe manufacturing business covering production, inventory, dispatch, bend processing, packing, and quotations across multiple user roles</li>
+        <li>Integrated Tally Prime accounting via a Python bridge — auto-syncing sales invoices and mapping 160+ products for one-click dispatch; quotation module generates branded A4 PDFs with dynamic GST logic</li>
+        <li>Implemented role-based access control, single-device login enforcement, rate limiting, and JWT session security</li>
+      </ul>
+    </div>
+
+    <div class="pi">
+      <div class="pi-top">
+        <span class="pi-name">Saathi AI — Voice-First AI Emotional Companion</span>
+        <span class="pi-link">In Development</span>
+      </div>
+      <div class="pi-sub">Founder &amp; Solo Builder · Next.js 16 · Claude API · Sarvam.ai TTS · Neon PostgreSQL</div>
+      <ul class="pi-ul">
+        <li>Designing an AI companion app rooted in Bhagavad Gita wisdom for Indian working professionals; built 18-chapter Gita wisdom engine (14,000+ lines) with 200-question emotional response bank and crisis detection</li>
+        <li>Authored complete product BRD, character system, and crisis protocol (iCall/Vandrevala integration) from scratch; solo-built MVP on Vercel</li>
+      </ul>
+    </div>
+
+    <div class="pi">
+      <div class="pi-top">
+        <span class="pi-name">Stock Market Prediction Model</span>
+        <span class="pi-link">Deployed on Streamlit</span>
+      </div>
+      <div class="pi-sub">Python · scikit-learn · LSTM · Pandas · Streamlit · Yahoo Finance API</div>
+      <ul class="pi-ul">
+        <li>Implemented and compared Linear Regression, Random Forest, and LSTM models with feature engineering; evaluated via RMSE, MAE, R² — deployed with interactive Streamlit dashboard</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="sec">
+    <div class="sec-title">Skills</div>
+    <table class="sk-table">
+      <tr>
+        <td>Product / BA</td>
+        <td>Requirements Gathering, BRD/FRD Authoring, User Stories, Sprint Management, Process Flow Design, Edge Case Analysis, QA Coordination, Stakeholder Interviews, Figma, Flowlu</td>
+      </tr>
+      <tr>
+        <td>Technical</td>
+        <td>Next.js, React, TypeScript, Python, Java, Prisma ORM, PostgreSQL, SQL, REST APIs, Git, Vercel</td>
+      </tr>
+      <tr>
+        <td>Data &amp; Analytics</td>
+        <td>Power BI, Tableau, MS Excel, Pandas, scikit-learn, Random Forest, LSTM, Feature Engineering</td>
+      </tr>
+      <tr>
+        <td>Finance</td>
+        <td>CFA Level 1 Candidate (Attempted Nov 2025), Financial Modeling, DCF Valuation, Ratio Analysis, Forecasting</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="sec">
+    <div class="sec-title">Education</div>
+
+    <div class="edu-item">
+      <div class="edu-top">
+        <span class="edu-co">Pandit Deendayal Energy University (PDEU), Gandhinagar</span>
+        <span class="edu-date">Expected Jun 2026</span>
+      </div>
+      <div class="edu-det">B.Tech Computer Engineering &nbsp;·&nbsp; <strong>8.79 CGPA</strong></div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-top">
+        <span class="edu-co">CFA Institute</span>
+        <span class="edu-date">November 2025</span>
+      </div>
+      <div class="edu-det">CFA Level 1 — Candidate (Attempted) &nbsp;·&nbsp; Equity, Fixed Income, Derivatives, Economics, Ethics</div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="sec">
+    <div class="sec-title">Certifications &amp; Publications</div>
+    <div class="cert-item">Financial Modeling &amp; Analysis with PwC India — UpGrad &nbsp;·&nbsp; Financial Modeling, Valuation, Forecasting</div>
+    <div class="cert-item">Research Paper: Credit Card Fraud Detection using Machine Learning — Published in IEEE</div>
+    <div class="cert-item">Java In Depth — Udemy &nbsp;·&nbsp; Cybersecurity Fundamentals &nbsp;·&nbsp; Entrepreneurship Certificate</div>
+  </div>
+
+</div><!-- end .page -->
+</body>
+</html>
