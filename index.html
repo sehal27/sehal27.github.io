@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sehal Maheshwari — Business Analyst & Product Thinker</title>
-  <meta name="description" content="Sehal Maheshwari — Final-year CS student, Business Analyst, and product builder from Ahmedabad. Open to BA, PM, and APM roles.">
+  <title>Sehal Maheshwari — Engineer · Builder · Analyst</title>
+  <meta name="description" content="Sehal Maheshwari — CS Graduate from PDEU. I build products, analyze systems, and make things happen across tech, business, and data.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
@@ -32,155 +32,143 @@
     h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; }
     h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); }
     h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); }
-    h3 { font-size: 1.15rem; }
+    h3 { font-size: 1.1rem; }
 
-    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
     section { padding: 80px 0; }
 
     .badge { display: inline-block; padding: 4px 14px; background: var(--accent-light); color: var(--accent-dark); border-radius: 100px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.03em; }
     .chip  { display: inline-block; padding: 6px 14px; background: var(--bg2); color: var(--text); border-radius: 100px; font-size: 0.83rem; font-weight: 500; border: 1px solid var(--border); }
-    .tag   { display: inline-block; padding: 3px 10px; background: var(--accent-light); color: var(--accent-dark); border-radius: 6px; font-size: 0.75rem; font-weight: 600; }
+    .tag   { display: inline-block; padding: 3px 10px; background: var(--accent-light); color: var(--accent-dark); border-radius: 6px; font-size: 0.74rem; font-weight: 600; }
 
     .fade-in { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
     .fade-in.visible { opacity: 1; transform: translateY(0); }
 
     /* ── NAV ── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(253,250,246,0.88); backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border); padding: 16px 0;
-      transition: box-shadow 0.3s;
-    }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(253,250,246,0.9); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); padding: 16px 0; transition: box-shadow 0.3s; }
     nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
-    .nav-inner { max-width: 900px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-inner { max-width: 960px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
     .nav-logo { font-weight: 800; font-size: 1.15rem; }
     .nav-logo span { color: var(--accent-dark); }
-    .nav-links { display: flex; gap: 6px; align-items: center; }
-    .nav-links a { padding: 8px 14px; border-radius: var(--r-sm); font-size: 0.88rem; font-weight: 500; color: var(--text2); transition: background 0.2s, color 0.2s; }
+    .nav-links { display: flex; gap: 4px; align-items: center; }
+    .nav-links a { padding: 8px 13px; border-radius: var(--r-sm); font-size: 0.86rem; font-weight: 500; color: var(--text2); transition: background 0.2s, color 0.2s; }
     .nav-links a:hover { background: var(--bg2); color: var(--text); }
     .nav-cta { padding: 9px 20px !important; background: var(--accent) !important; color: white !important; border-radius: 100px !important; }
     .nav-cta:hover { background: var(--accent-dark) !important; }
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; border: none; background: none; padding: 4px; }
-    .hamburger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: 0.3s; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; }
 
     /* ── HERO ── */
     #hero { padding: 140px 0 80px; }
     .hero-inner { display: grid; grid-template-columns: 1fr auto; gap: 60px; align-items: center; }
     .hero-badge { margin-bottom: 18px; }
-    .hero-name {
-      margin: 14px 0 12px;
-      background: linear-gradient(135deg, #2D2D2D 0%, #5A9060 100%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-    }
-    .hero-title { font-size: 1.1rem; color: var(--text2); font-weight: 500; margin-bottom: 14px; }
-    .hero-desc  { font-size: 1rem; color: var(--text2); line-height: 1.75; margin-bottom: 28px; max-width: 500px; }
+    .hero-name { margin: 14px 0 10px; background: linear-gradient(135deg, #2D2D2D 0%, #5A9060 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-title { font-size: 1.05rem; color: var(--text2); font-weight: 500; margin-bottom: 14px; }
+    .hero-desc  { font-size: 1rem; color: var(--text2); line-height: 1.78; margin-bottom: 28px; max-width: 520px; }
     .hero-btns  { display: flex; gap: 12px; flex-wrap: wrap; }
-
     .btn-primary   { padding: 12px 28px; background: var(--accent); color: white; border-radius: 100px; font-weight: 600; font-size: 0.95rem; border: none; cursor: pointer; transition: background 0.2s, transform 0.2s; display: inline-block; }
     .btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); }
     .btn-secondary { padding: 12px 28px; background: transparent; color: var(--text); border-radius: 100px; font-weight: 600; font-size: 0.95rem; border: 1.5px solid var(--border); transition: background 0.2s, border-color 0.2s, transform 0.2s; display: inline-block; }
     .btn-secondary:hover { background: var(--bg2); border-color: var(--text2); transform: translateY(-1px); }
-
     .hero-social { display: flex; gap: 10px; margin-top: 22px; }
     .social-btn { width: 40px; height: 40px; border-radius: 50%; background: var(--bg2); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; transition: background 0.2s, border-color 0.2s, transform 0.2s; }
     .social-btn:hover { background: var(--accent-light); border-color: var(--accent); transform: translateY(-2px); }
-
     .hero-photo-wrap { display: flex; align-items: center; justify-content: center; }
-    .hero-photo {
-      width: 280px; height: 280px;
-      border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
-      background: var(--bg2); border: 3px solid var(--border);
-      overflow: hidden; display: flex; align-items: center; justify-content: center;
-      font-size: 4.5rem; font-weight: 800; color: var(--accent-dark);
-      animation: morph 9s ease-in-out infinite;
-      flex-shrink: 0;
-    }
-    .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
-    @keyframes morph {
-      0%,100% { border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%; }
-      50%      { border-radius: 60% 40% 40% 60% / 60% 60% 40% 40%; }
-    }
-
-    .hero-stats { display: flex; gap: 32px; padding-top: 36px; border-top: 1px solid var(--border); margin-top: 36px; }
-    .stat-num   { font-size: 1.55rem; font-weight: 800; color: var(--accent-dark); line-height: 1; }
-    .stat-label { font-size: 0.78rem; color: var(--text2); font-weight: 500; margin-top: 4px; }
+    .hero-photo { width: 290px; height: 290px; border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%; background: var(--bg2); border: 3px solid var(--border); overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 4.5rem; font-weight: 800; color: var(--accent-dark); animation: morph 9s ease-in-out infinite; flex-shrink: 0; }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+    @keyframes morph { 0%,100% { border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%; } 50% { border-radius: 60% 40% 40% 60% / 60% 60% 40% 40%; } }
+    .hero-stats { display: flex; gap: 28px; padding-top: 32px; border-top: 1px solid var(--border); margin-top: 32px; flex-wrap: wrap; }
+    .stat-num   { font-size: 1.5rem; font-weight: 800; color: var(--accent-dark); line-height: 1; }
+    .stat-label { font-size: 0.76rem; color: var(--text2); font-weight: 500; margin-top: 4px; }
 
     /* ── SECTION HEADER ── */
-    .sh { text-align: center; margin-bottom: 56px; }
-    .sh-eye   { font-size: 0.82rem; font-weight: 700; color: var(--accent-dark); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 10px; }
+    .sh { text-align: center; margin-bottom: 52px; }
+    .sh-eye   { font-size: 0.8rem; font-weight: 700; color: var(--accent-dark); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 10px; }
     .sh-title { margin-bottom: 12px; }
-    .sh-sub   { color: var(--text2); max-width: 480px; margin: 0 auto; font-size: 0.97rem; }
+    .sh-sub   { color: var(--text2); max-width: 500px; margin: 0 auto; font-size: 0.97rem; }
 
     /* ── ABOUT ── */
     #about { background: var(--bg2); }
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
-    .about-text p { color: var(--text2); line-height: 1.8; margin-bottom: 14px; font-size: 0.97rem; }
+    .about-text p { color: var(--text2); line-height: 1.82; margin-bottom: 14px; font-size: 0.97rem; }
     .about-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
-    .about-cards { display: flex; flex-direction: column; gap: 16px; }
-    .about-card { background: var(--white); border-radius: var(--r); padding: 24px; box-shadow: var(--shadow); border: 1px solid var(--border); }
-    .about-card-icon { width: 42px; height: 42px; background: var(--accent-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
-    .about-card h3 { margin-bottom: 6px; font-size: 1rem; }
-    .about-card p  { color: var(--text2); font-size: 0.88rem; line-height: 1.6; margin: 0; }
+    .about-cards { display: flex; flex-direction: column; gap: 14px; }
+    .about-card { background: var(--white); border-radius: var(--r); padding: 22px 24px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+    .about-card-icon { width: 40px; height: 40px; background: var(--accent-light); border-radius: 11px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
+    .about-card h3 { margin-bottom: 5px; font-size: 0.98rem; }
+    .about-card p  { color: var(--text2); font-size: 0.86rem; line-height: 1.6; margin: 0; }
 
     /* ── EXPERIENCE ── */
     #experience { background: var(--bg); }
     .timeline { position: relative; }
     .timeline::before { content: ''; position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: var(--border); }
-    .tl-item { position: relative; padding-left: 58px; margin-bottom: 36px; }
+    .tl-item { position: relative; padding-left: 56px; margin-bottom: 32px; }
     .tl-item:last-child { margin-bottom: 0; }
     .tl-dot { position: absolute; left: 12px; top: 8px; width: 17px; height: 17px; border-radius: 50%; background: var(--accent); border: 3px solid var(--bg); box-shadow: 0 0 0 2px var(--accent); }
     .tl-dot.grey  { background: var(--text2); box-shadow: 0 0 0 2px var(--text2); }
-    .tl-dot.light { background: var(--border); box-shadow: 0 0 0 2px var(--border); }
-    .exp-card { background: var(--white); border-radius: var(--r); padding: 28px 30px; box-shadow: var(--shadow); border: 1px solid var(--border); transition: box-shadow 0.3s, transform 0.3s; }
+    .tl-dot.light { background: #C5C5C5; box-shadow: 0 0 0 2px #C5C5C5; }
+    .exp-card { background: var(--white); border-radius: var(--r); padding: 26px 28px; box-shadow: var(--shadow); border: 1px solid var(--border); transition: box-shadow 0.3s, transform 0.3s; }
     .exp-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
-    .exp-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
-    .exp-co   { font-size: 0.88rem; color: var(--accent-dark); font-weight: 700; }
-    .exp-period { font-size: 0.8rem; color: var(--text2); background: var(--bg2); padding: 4px 10px; border-radius: 100px; white-space: nowrap; flex-shrink: 0; }
-    .exp-role { font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; }
+    .exp-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
+    .exp-co   { font-size: 0.86rem; color: var(--accent-dark); font-weight: 700; }
+    .exp-period { font-size: 0.79rem; color: var(--text2); background: var(--bg2); padding: 4px 10px; border-radius: 100px; white-space: nowrap; flex-shrink: 0; }
+    .exp-role { font-size: 1.08rem; font-weight: 700; margin-bottom: 12px; }
     .exp-ul { list-style: none; }
-    .exp-ul li { position: relative; padding-left: 16px; color: var(--text2); font-size: 0.9rem; line-height: 1.65; margin-bottom: 6px; }
-    .exp-ul li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-weight: 700; font-size: 0.8rem; top: 2px; }
+    .exp-ul li { position: relative; padding-left: 16px; color: var(--text2); font-size: 0.89rem; line-height: 1.65; margin-bottom: 5px; }
+    .exp-ul li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-weight: 700; font-size: 0.78rem; top: 3px; }
     .exp-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
 
     /* ── PROJECTS ── */
     #projects { background: var(--bg2); }
-    .proj-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 24px; }
-    .proj-card { background: var(--white); border-radius: var(--r); padding: 28px; box-shadow: var(--shadow); border: 1px solid var(--border); transition: box-shadow 0.3s, transform 0.3s; display: flex; flex-direction: column; }
+    .proj-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 22px; }
+    .proj-card { background: var(--white); border-radius: var(--r); padding: 26px; box-shadow: var(--shadow); border: 1px solid var(--border); transition: box-shadow 0.3s, transform 0.3s; display: flex; flex-direction: column; }
     .proj-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-4px); }
-    .proj-icon { font-size: 1.8rem; margin-bottom: 14px; }
-    .p-status { display: inline-block; padding: 3px 10px; border-radius: 100px; font-size: 0.73rem; font-weight: 700; margin-bottom: 10px; }
+    .proj-card.featured { grid-column: span 2; }
+    .proj-icon { font-size: 1.8rem; margin-bottom: 12px; }
+    .p-status { display: inline-block; padding: 3px 10px; border-radius: 100px; font-size: 0.72rem; font-weight: 700; margin-bottom: 10px; }
     .s-live     { background: #E8F5E9; color: #2E7D32; }
     .s-progress { background: #FFF3E0; color: #BF360C; }
-    .proj-title { font-size: 1.08rem; font-weight: 700; margin-bottom: 4px; }
-    .proj-type  { font-size: 0.8rem; color: var(--accent-dark); font-weight: 600; margin-bottom: 12px; }
-    .proj-ul { list-style: none; margin-bottom: 14px; flex: 1; }
-    .proj-ul li { font-size: 0.86rem; color: var(--text2); padding-left: 12px; position: relative; line-height: 1.55; margin-bottom: 5px; }
-    .proj-ul li::before { content: '·'; position: absolute; left: 0; color: var(--accent); font-weight: 900; }
-    .proj-tags  { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 16px; }
+    .s-personal { background: #E8EAF6; color: #3949AB; }
+    .proj-title { font-size: 1.06rem; font-weight: 700; margin-bottom: 3px; }
+    .proj-type  { font-size: 0.78rem; color: var(--accent-dark); font-weight: 600; margin-bottom: 12px; }
+    .proj-ul { list-style: none; margin-bottom: 12px; flex: 1; }
+    .proj-ul li { font-size: 0.86rem; color: var(--text2); padding-left: 13px; position: relative; line-height: 1.55; margin-bottom: 5px; }
+    .proj-ul li::before { content: '·'; position: absolute; left: 0; color: var(--accent); font-weight: 900; font-size: 1.1rem; top: -1px; }
+    .proj-tags  { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 14px; }
     .proj-links { display: flex; gap: 8px; margin-top: auto; }
-    .pl { padding: 7px 16px; border-radius: 100px; font-size: 0.82rem; font-weight: 600; transition: 0.2s; display: inline-block; }
+    .pl { padding: 7px 16px; border-radius: 100px; font-size: 0.81rem; font-weight: 600; transition: 0.2s; display: inline-block; }
     .pl-p { background: var(--accent); color: white; }
     .pl-p:hover { background: var(--accent-dark); }
     .pl-s { background: var(--bg2); color: var(--text2); border: 1px solid var(--border); cursor: default; }
 
     /* ── SKILLS ── */
     #skills { background: var(--bg); }
-    .sk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 22px; }
+    .sk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 20px; }
     .sk-group { background: var(--white); border-radius: var(--r); padding: 22px; border: 1px solid var(--border); box-shadow: var(--shadow); }
     .sk-head  { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
-    .sk-icon  { width: 36px; height: 36px; background: var(--accent-light); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
-    .sk-name  { font-weight: 700; font-size: 0.92rem; }
+    .sk-icon  { width: 36px; height: 36px; background: var(--accent-light); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0; }
+    .sk-name  { font-weight: 700; font-size: 0.9rem; }
     .sk-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 
     /* ── EDUCATION ── */
     #education { background: var(--bg2); }
-    .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    .edu-card { background: var(--white); border-radius: var(--r); padding: 26px; border: 1px solid var(--border); box-shadow: var(--shadow); }
+    .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .edu-card { background: var(--white); border-radius: var(--r); padding: 24px; border: 1px solid var(--border); box-shadow: var(--shadow); }
     .edu-badge-wrap { margin-bottom: 10px; }
-    .edu-school { font-weight: 700; font-size: 1rem; margin-bottom: 4px; }
-    .edu-degree { color: var(--text2); font-size: 0.88rem; margin-bottom: 8px; }
+    .edu-school { font-weight: 700; font-size: 0.98rem; margin-bottom: 3px; }
+    .edu-degree { color: var(--text2); font-size: 0.87rem; margin-bottom: 7px; line-height: 1.5; }
     .edu-meta   { display: flex; flex-wrap: wrap; gap: 8px; }
-    .edu-meta span { font-size: 0.8rem; font-weight: 600; color: var(--accent-dark); }
+    .edu-meta span { font-size: 0.79rem; font-weight: 600; color: var(--accent-dark); }
+
+    /* ── CERTS ── */
+    #certificates { background: var(--bg); }
+    .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
+    .cert-card { background: var(--white); border-radius: var(--r); padding: 20px 22px; border: 1px solid var(--border); box-shadow: var(--shadow); display: flex; align-items: flex-start; gap: 14px; }
+    .cert-icon { width: 42px; height: 42px; background: var(--accent-light); border-radius: 11px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+    .cert-body { }
+    .cert-issuer { font-size: 0.74rem; color: var(--accent-dark); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3px; }
+    .cert-name { font-weight: 700; font-size: 0.92rem; margin-bottom: 3px; }
+    .cert-detail { font-size: 0.82rem; color: var(--text2); line-height: 1.4; }
 
     /* ── RESUME CTA ── */
     #resume-cta { background: linear-gradient(135deg, #EAF3EA, #F5F0E8); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 70px 0; }
@@ -193,47 +181,40 @@
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
     .contact-intro { color: var(--text2); font-size: 0.97rem; line-height: 1.75; margin-bottom: 24px; }
     .c-links { display: flex; flex-direction: column; gap: 12px; }
-    .c-link { display: flex; align-items: center; gap: 14px; padding: 15px 18px; background: var(--white); border-radius: var(--r-sm); border: 1px solid var(--border); transition: box-shadow 0.2s, transform 0.2s; }
+    .c-link { display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: var(--white); border-radius: var(--r-sm); border: 1px solid var(--border); transition: box-shadow 0.2s, transform 0.2s; }
     .c-link:hover { box-shadow: var(--shadow); transform: translateX(4px); }
     .c-icon { width: 38px; height: 38px; background: var(--accent-light); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .c-label { font-size: 0.76rem; color: var(--text2); font-weight: 500; }
+    .c-label { font-size: 0.74rem; color: var(--text2); font-weight: 500; }
     .c-val   { font-size: 0.88rem; font-weight: 600; }
-
-    .form-card { background: var(--white); border-radius: var(--r); padding: 30px; border: 1px solid var(--border); box-shadow: var(--shadow); }
-    .form-card h3 { margin-bottom: 20px; font-size: 1.1rem; }
-    .fg { margin-bottom: 16px; }
-    .fg label { display: block; font-size: 0.83rem; font-weight: 600; margin-bottom: 7px; }
-    .fg input, .fg textarea { width: 100%; padding: 11px 14px; border: 1.5px solid var(--border); border-radius: var(--r-sm); font-family: var(--font); font-size: 0.88rem; background: var(--bg); color: var(--text); outline: none; transition: border-color 0.2s; }
+    .form-card { background: var(--white); border-radius: var(--r); padding: 28px; border: 1px solid var(--border); box-shadow: var(--shadow); }
+    .form-card h3 { margin-bottom: 18px; }
+    .fg { margin-bottom: 14px; }
+    .fg label { display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 6px; }
+    .fg input, .fg textarea { width: 100%; padding: 10px 14px; border: 1.5px solid var(--border); border-radius: var(--r-sm); font-family: var(--font); font-size: 0.88rem; background: var(--bg); color: var(--text); outline: none; transition: border-color 0.2s; }
     .fg input:focus, .fg textarea:focus { border-color: var(--accent); }
-    .fg textarea { resize: vertical; min-height: 90px; }
+    .fg textarea { resize: vertical; min-height: 88px; }
 
     /* ── FOOTER ── */
-    footer { background: #1E1E1E; color: rgba(253,250,246,0.7); padding: 28px 0; text-align: center; }
+    footer { background: #1E1E1E; color: rgba(253,250,246,0.65); padding: 28px 0; text-align: center; }
     footer a { color: var(--accent); }
-    footer p { font-size: 0.85rem; }
+    footer p { font-size: 0.84rem; }
 
     /* ── RESPONSIVE ── */
-    @media (max-width: 720px) {
-      .hero-inner { grid-template-columns: 1fr; text-align: center; }
+    @media (max-width: 760px) {
+      .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 36px; }
       .hero-photo-wrap { order: -1; justify-content: center; }
       .hero-photo { width: 200px; height: 200px; font-size: 3.5rem; }
-      .hero-btns { justify-content: center; }
-      .hero-social { justify-content: center; }
-      .hero-stats { justify-content: center; flex-wrap: wrap; gap: 20px; }
-      .hero-desc { margin: 0 auto 28px; }
+      .hero-btns, .hero-social, .hero-stats { justify-content: center; }
+      .hero-desc { margin-left: auto; margin-right: auto; }
       .about-grid { grid-template-columns: 1fr; }
       .edu-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; }
+      .proj-card.featured { grid-column: span 1; }
       .nav-links { display: none; }
       .hamburger { display: flex; }
       section { padding: 60px 0; }
     }
-    .nav-links.open {
-      display: flex; flex-direction: column;
-      position: fixed; top: 60px; left: 0; right: 0;
-      background: var(--bg); border-bottom: 1px solid var(--border);
-      padding: 14px 16px; gap: 2px; z-index: 99;
-    }
+    .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 60px; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--border); padding: 14px 16px; gap: 2px; z-index: 99; }
     .nav-links.open a { padding: 12px 14px; border-radius: var(--r-sm); }
   </style>
 </head>
@@ -248,6 +229,7 @@
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
       <a href="#contact" class="nav-cta">Say Hello</a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -261,13 +243,15 @@
   <div class="container">
     <div class="hero-inner">
       <div class="fade-in">
-        <div class="hero-badge"><span class="badge">Open to BA · PM · APM Roles</span></div>
+        <div class="hero-badge">
+          <span class="badge">B.Tech Computer Engineering · PDEU · 8.84 CGPA</span>
+        </div>
         <h1 class="hero-name">Sehal Maheshwari</h1>
-        <p class="hero-title">Business Analyst &amp; Product Thinker &nbsp;·&nbsp; Ahmedabad, India</p>
+        <p class="hero-title">Engineer &nbsp;·&nbsp; Builder &nbsp;·&nbsp; Analyst &nbsp;·&nbsp; Ahmedabad, India</p>
         <p class="hero-desc">
-          Final-year CS student who bridges business problems and technical solutions.
-          I've led on-site client discovery sessions, shipped a production ERP system,
-          and built AI products — all before graduating.
+          I build software, analyze systems, understand businesses, and make things actually work.
+          From production ERP systems to ML trading bots to AI companions — I don't just study
+          things, I ship them.
         </p>
         <div class="hero-btns">
           <a href="#projects" class="btn-primary">See My Work</a>
@@ -275,30 +259,25 @@
         </div>
         <div class="hero-social">
           <a href="https://linkedin.com/in/sehal-maheshwari-738091260" target="_blank" class="social-btn" title="LinkedIn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--accent-dark)"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="var(--accent-dark)"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
           </a>
           <a href="https://github.com/sehal27" target="_blank" class="social-btn" title="GitHub">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--accent-dark)"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="var(--accent-dark)"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
           </a>
           <a href="mailto:maheshwarisehal27@gmail.com" class="social-btn" title="Email">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-dark)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--accent-dark)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </a>
         </div>
         <div class="hero-stats">
-          <div class="stat"><div class="stat-num">2</div><div class="stat-label">Internships</div></div>
-          <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Projects Shipped</div></div>
-          <div class="stat"><div class="stat-num">200+</div><div class="stat-label">Test Cases Written</div></div>
-          <div class="stat"><div class="stat-num">8.79</div><div class="stat-label">CGPA</div></div>
+          <div class="stat"><div class="stat-num">3</div><div class="stat-label">Internships</div></div>
+          <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Projects Built</div></div>
+          <div class="stat"><div class="stat-num">8.84</div><div class="stat-label">CGPA</div></div>
+          <div class="stat"><div class="stat-num">1</div><div class="stat-label">IEEE Paper</div></div>
         </div>
       </div>
       <div class="hero-photo-wrap fade-in" style="transition-delay:0.2s">
-        <div class="hero-photo" id="hero-photo">
-          <!--
-            TO ADD YOUR PHOTO:
-            1. Copy your photo to the assets/ folder (e.g. assets/sehal.jpg)
-            2. Replace the text "SM" below with: <img src="assets/sehal.jpg" alt="Sehal Maheshwari">
-          -->
-          SM
+        <div class="hero-photo">
+          <img src="assets/sehal.jpg" alt="Sehal Maheshwari">
         </div>
       </div>
     </div>
@@ -310,43 +289,43 @@
   <div class="container">
     <div class="sh fade-in">
       <div class="sh-eye">Who I Am</div>
-      <h2 class="sh-title">A builder who thinks in products</h2>
-      <p class="sh-sub">Computer Engineering meets Business Thinking meets real-world execution</p>
+      <h2 class="sh-title">More than one thing</h2>
+      <p class="sh-sub">I don't fit neatly into one box — and that's the point.</p>
     </div>
     <div class="about-grid">
       <div class="fade-in">
-        <p>I'm a final-year Computer Engineering student at PDEU, Gandhinagar with an unusual profile — I don't just understand both sides of the table, I've sat at both. As a BA intern, I ran Day-2 client meetings and authored BRDs from scratch. As a developer, I shipped a real ERP system that a business runs on today.</p>
-        <p>I'm drawn to BA/PM/APM roles because I've lived the frustration of unclear requirements — and I know exactly how to fix them. I speak developer fluently and business fluently, and I thrive in the space between the two.</p>
-        <p>Outside of work: I'm building Saathi — an AI emotional companion for Indian professionals, rooted in Bhagavad Gita wisdom. It's ambitious, purpose-driven, and entirely solo-built.</p>
+        <p>I'm a Computer Engineering graduate from PDEU (8.84 CGPA) with a profile that cuts across multiple disciplines. I write production code, gather and document business requirements, build ML models, understand financial statements, and manage product delivery — not as separate interests, but as one connected way of thinking.</p>
+        <p>I've built a full ERP system from scratch that a real business runs on today. I've managed sprints for a SaaS CRM, trained ML models deployed for government use, and started an AI startup — all while studying full time.</p>
+        <p>I believe great work happens when you understand the full picture: the client's problem, the technical constraints, the data behind decisions, and the product experience. I've trained myself to hold all of those at once.</p>
         <div class="about-tags">
-          <span class="chip">Requirements Gathering</span>
-          <span class="chip">Product Thinking</span>
-          <span class="chip">Full-Stack Dev</span>
-          <span class="chip">Data Analysis</span>
-          <span class="chip">CFA L1 Candidate</span>
+          <span class="chip">Full-Stack Development</span>
+          <span class="chip">Product & Business Analysis</span>
+          <span class="chip">Machine Learning</span>
+          <span class="chip">Financial Analysis</span>
+          <span class="chip">Founder Mindset</span>
         </div>
       </div>
       <div class="about-cards fade-in" style="transition-delay:0.15s">
         <div class="about-card">
           <div class="about-card-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-dark)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-dark)" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
           </div>
-          <h3>Stakeholder First</h3>
-          <p>Led on-site client discovery sessions from Day 2 of my first BA internship. I listen deeply before I document anything.</p>
+          <h3>I Build Real Things</h3>
+          <p>Not academic exercises. A live ERP system, an ML trading bot, an AI startup. Things that work in production and solve real problems.</p>
         </div>
         <div class="about-card">
           <div class="about-card-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-dark)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-dark)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </div>
-          <h3>Builder Mindset</h3>
-          <p>Shipped a full ERP system to production solo. I don't just document products — I understand what it takes to build them.</p>
+          <h3>I Think Across Domains</h3>
+          <p>Tech, business, data, finance — I connect dots others miss because I've worked in all of them, not just one.</p>
         </div>
         <div class="about-card">
           <div class="about-card-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-dark)" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-dark)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3>Data-Informed</h3>
-          <p>88% accuracy ML model, HR analysis for 1,435 employees — I back decisions with real numbers.</p>
+          <h3>I Manage & Communicate</h3>
+          <p>Led client meetings, managed sprint teams, coordinated QA — I'm as comfortable in a boardroom as in a codebase.</p>
         </div>
       </div>
     </div>
@@ -358,8 +337,7 @@
   <div class="container">
     <div class="sh fade-in">
       <div class="sh-eye">Experience</div>
-      <h2 class="sh-title">Where I've worked</h2>
-      <p class="sh-sub">From client boardrooms to production deployments</p>
+      <h2 class="sh-title">Where I've contributed</h2>
     </div>
     <div class="timeline">
 
@@ -374,26 +352,25 @@
             <div class="exp-period">Jan 2026 – May 2026</div>
           </div>
           <ul class="exp-ul">
-            <li>Conducted on-site client discovery from Day 2 — led stakeholder interviews and site visits to fully map existing workflows for a new enterprise Site Management System</li>
-            <li>Authored BRD, FRD, system architecture docs, process flow diagrams, and HTML wireframes from scratch for a greenfield platform</li>
-            <li>Transitioned to Pixally CRM (a HoneyBook competitor for photographers) — audited existing documentation and identified 30+ requirement gaps and missing edge cases across modules</li>
-            <li>Owned the sprint lifecycle end-to-end: wrote user stories in Flowlu, assigned to developers, unblocked technical queries, reviewed QA findings, and managed delivery cycles</li>
-            <li>Rebuilt the subscription module requirements from near-zero — authored 200+ edge cases and test cases; researched and documented full Rewardful affiliate API integration plan</li>
-            <li>Participated in ongoing client meetings to clarify ambiguous flows, updated FRD and Figma prototypes in real time, ensuring zero information loss in developer handoffs</li>
+            <li>Led requirements gathering for enterprise software projects — on-site client visits, stakeholder discussions, and workflow mapping across two live products</li>
+            <li>Created and maintained complete product documentation: Business Requirement Documents (BRD), Functional Requirement Documents (FRD), system architecture, process flow diagrams, and UI wireframes</li>
+            <li>Managed end-to-end sprint coordination for Pixally CRM — a SaaS platform for photography businesses — from user story creation and developer task assignment through QA review and client delivery</li>
+            <li>Rebuilt subscription module documentation from the ground up: authored 200+ test cases and edge case scenarios, and documented full third-party affiliate API integration specifications</li>
+            <li>Continuously updated Figma prototypes and FRDs based on evolving client requirements, acting as the communication bridge between clients, developers, and QA teams</li>
           </ul>
           <div class="exp-tags">
             <span class="tag">BRD / FRD</span>
             <span class="tag">Sprint Management</span>
-            <span class="tag">Stakeholder Interviews</span>
+            <span class="tag">Requirements Gathering</span>
             <span class="tag">User Stories</span>
-            <span class="tag">QA Management</span>
+            <span class="tag">Test Cases</span>
             <span class="tag">Figma</span>
-            <span class="tag">Flowlu</span>
+            <span class="tag">Stakeholder Management</span>
           </div>
         </div>
       </div>
 
-      <div class="tl-item fade-in" style="transition-delay:0.1s">
+      <div class="tl-item fade-in" style="transition-delay:0.08s">
         <div class="tl-dot grey"></div>
         <div class="exp-card">
           <div class="exp-head">
@@ -404,21 +381,21 @@
             <div class="exp-period">May 2025 – Jul 2025</div>
           </div>
           <ul class="exp-ul">
-            <li>Designed and deployed a traffic prediction model for Ahmedabad Municipal Corporation using pincode-level and weather data — achieved 88% accuracy with Random Forest Classifier</li>
-            <li>Analyzed HR dataset for 1,435 employees, identified key attrition patterns, and delivered insights projected to reduce employee turnover by 15%</li>
-            <li>Cleaned and preprocessed 10,000+ rows of raw data, improving data quality and boosting model performance by 98%</li>
+            <li>Built a traffic prediction model for Ahmedabad Municipal Corporation using pincode-level and weather data — achieved 88% accuracy with a Random Forest Classifier</li>
+            <li>Analyzed HR data for 1,435 employees, identified key attrition drivers, and delivered insights that supported a projected 15% reduction in employee turnover</li>
+            <li>Cleaned and preprocessed 10,000+ rows of raw data, improving data quality and boosting model accuracy significantly</li>
           </ul>
           <div class="exp-tags">
             <span class="tag">Python</span>
             <span class="tag">Random Forest</span>
             <span class="tag">HR Analytics</span>
-            <span class="tag">Data Cleaning</span>
+            <span class="tag">Data Preprocessing</span>
             <span class="tag">Predictive Modeling</span>
           </div>
         </div>
       </div>
 
-      <div class="tl-item fade-in" style="transition-delay:0.2s">
+      <div class="tl-item fade-in" style="transition-delay:0.16s">
         <div class="tl-dot light"></div>
         <div class="exp-card">
           <div class="exp-head">
@@ -429,14 +406,15 @@
             <div class="exp-period">Jun 2023 – Jul 2023</div>
           </div>
           <ul class="exp-ul">
-            <li>Led the Thol Project under UNESCO umbrella — community mobilization for plastic-free town initiative</li>
-            <li>Managed fundraising, grant writing, and CSR activities to engage local stakeholders</li>
-            <li>Developed social media strategy that increased initiative outreach and community participation</li>
+            <li>Led ground-level operations for the Thol Project under UNESCO — community mobilization for a plastic-free town initiative</li>
+            <li>Managed fundraising campaigns, grant writing, and CSR outreach to engage stakeholders and secure project resources</li>
+            <li>Developed and executed a social media strategy that expanded initiative reach and community participation</li>
           </ul>
           <div class="exp-tags">
             <span class="tag">Community Engagement</span>
             <span class="tag">Grant Writing</span>
             <span class="tag">Social Media</span>
+            <span class="tag">CSR</span>
           </div>
         </div>
       </div>
@@ -451,74 +429,139 @@
     <div class="sh fade-in">
       <div class="sh-eye">Projects</div>
       <h2 class="sh-title">Things I've built</h2>
-      <p class="sh-sub">From production ERP systems to AI companions — I ship real things</p>
+      <p class="sh-sub">Real software, real deployments, real users</p>
     </div>
     <div class="proj-grid">
 
-      <div class="proj-card fade-in">
-        <div class="proj-icon">🏭</div>
-        <span class="p-status s-live">Live in Production</span>
-        <div class="proj-title">BLP Inventory ERP</div>
-        <div class="proj-type">Full-Stack · Manufacturing &amp; Sales Platform</div>
-        <ul class="proj-ul">
-          <li>End-to-end ERP for PVC pipe manufacturing — production, inventory, dispatch, bend processing, packing, and quotations across multiple user roles</li>
-          <li>Tally Prime sync via Python bridge, auto-mapping 160+ products for one-click dispatch</li>
-          <li>PDF quotation module with dynamic GST logic, discount calculations, and live pricing — serving 2 companies</li>
-          <li>Role-based access control, single-device login enforcement, rate limiting, and JWT session security</li>
-        </ul>
-        <div class="proj-tags">
-          <span class="tag">Next.js</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">Prisma</span>
-          <span class="tag">PostgreSQL</span>
-          <span class="tag">Vercel</span>
-          <span class="tag">Python</span>
-        </div>
-        <div class="proj-links">
-          <a href="https://blp-inventory.vercel.app" target="_blank" class="pl pl-p">Live Site ↗</a>
+      <!-- BLP ERP - featured -->
+      <div class="proj-card featured fade-in" style="grid-column: span 2;">
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start;">
+          <div>
+            <div class="proj-icon">🏭</div>
+            <span class="p-status s-live">Live in Production</span>
+            <div class="proj-title">BLP Inventory ERP</div>
+            <div class="proj-type">Full-Stack · Manufacturing & Sales Management Platform</div>
+            <p style="font-size:0.88rem; color:var(--text2); line-height:1.65; margin-bottom:14px;">
+              A complete, production-grade ERP system built solo for a PVC pipe manufacturing business. This isn't a demo — it's the actual software the company uses every day to run operations.
+            </p>
+            <div class="proj-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Prisma ORM</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Python</span>
+              <span class="tag">Vercel</span>
+              <span class="tag">JWT Auth</span>
+            </div>
+            <div class="proj-links" style="margin-top:16px;">
+              <a href="https://blp-inventory.vercel.app" target="_blank" class="pl pl-p">Live Site ↗</a>
+            </div>
+          </div>
+          <div>
+            <ul class="proj-ul">
+              <li>Covers the full manufacturing cycle: raw material inventory → production → semi-finished stock → bend processing → packing → finished goods dispatch</li>
+              <li>Multi-company support with separate quotation systems for 2 businesses — PDF quote generation with dynamic GST (CGST/SGST/IGST), discount logic, and live pricing pulled from spreadsheets</li>
+              <li>Tally Prime accounting integration via a custom Python bridge — auto-syncs sales invoices and maps 160+ products between the ERP and Tally for one-click dispatch</li>
+              <li>Dynamic product master with configurable attributes (brand, size, grade, color) so non-technical staff can add new product variants without any code changes</li>
+              <li>Role-based access control across production, dispatch, admin, and management roles with single-device login enforcement, rate limiting, and JWT session security</li>
+              <li>Complex inventory modeling: unit conversions between bundle, piece, and carton; separate tracking of semi-finished vs. finished stock</li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div class="proj-card fade-in" style="transition-delay:0.1s">
+      <!-- Saathi AI -->
+      <div class="proj-card fade-in" style="transition-delay:0.05s">
         <div class="proj-icon">🙏</div>
-        <span class="p-status s-progress">In Development</span>
+        <span class="p-status s-progress">In Development · Founder</span>
         <div class="proj-title">Saathi AI</div>
-        <div class="proj-type">Founder &amp; Solo Builder · AI Emotional Companion</div>
+        <div class="proj-type">AI Emotional Companion App · Self-Founded</div>
         <ul class="proj-ul">
-          <li>AI emotional companion app rooted in Bhagavad Gita wisdom — addressing the pre-depression gap for Indian working professionals</li>
-          <li>Built 18-chapter Gita wisdom engine (14,000+ lines) with 200-question emotional response bank and crisis detection protocol</li>
-          <li>Solo-built MVP using Next.js 16, Claude API, Sarvam.ai Hindi TTS, and session memory on Vercel</li>
-          <li>Designed full BRD, character system, and iCall/Vandrevala crisis integration from scratch</li>
+          <li>Building a voice-first AI companion in Hinglish rooted in Bhagavad Gita wisdom — targeting the mental health support gap for Indian working professionals</li>
+          <li>Designed the entire product from scratch: BRD, character system, emotional response architecture, and crisis detection protocol integrating iCall and Vandrevala Foundation helplines</li>
+          <li>Built an 18-chapter Gita wisdom engine (14,000+ lines) with a 200-question emotional response bank — maps user emotions to relevant shlokas and guidance dynamically</li>
+          <li>Solo-built and deployed MVP using Next.js 16, React 19, Claude API, Sarvam.ai (Hindi TTS/STT), and Neon PostgreSQL on Vercel</li>
         </ul>
         <div class="proj-tags">
           <span class="tag">Next.js 16</span>
           <span class="tag">Claude API</span>
           <span class="tag">Sarvam.ai</span>
           <span class="tag">Neon DB</span>
+          <span class="tag">Product Design</span>
         </div>
         <div class="proj-links">
           <span class="pl pl-s">🚧 UI in active development</span>
         </div>
       </div>
 
-      <div class="proj-card fade-in" style="transition-delay:0.2s">
+      <!-- FNO Trading Bot -->
+      <div class="proj-card fade-in" style="transition-delay:0.1s">
+        <div class="proj-icon">📊</div>
+        <span class="p-status s-personal">Personal Project</span>
+        <div class="proj-title">FNO Trading Bot — NIFTY Signal Engine</div>
+        <div class="proj-type">ML · Algorithmic Trading · Automation</div>
+        <ul class="proj-ul">
+          <li>Built an ML-driven signal engine for NIFTY F&O trading with a 78% historical win rate across backtested scenarios</li>
+          <li>Monitors global market cues (SGX Nifty, Dow futures, Asian markets) and financial news in real time to generate pre-market trade signals</li>
+          <li>Integrated VIX analysis and technical indicators for dynamic signal confidence scoring</li>
+          <li>Automated Telegram alerts with entry, target, and stop-loss levels — fully hands-off signal delivery</li>
+          <li>Runs as a cloud-deployed Python service with scheduled pre-market and market-hours execution</li>
+        </ul>
+        <div class="proj-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Telegram API</span>
+          <span class="tag">Financial Data</span>
+          <span class="tag">Cloud Deployment</span>
+        </div>
+        <div class="proj-links">
+          <span class="pl pl-s">Private Repository</span>
+        </div>
+      </div>
+
+      <!-- Stock Market Prediction -->
+      <div class="proj-card fade-in" style="transition-delay:0.15s">
         <div class="proj-icon">📈</div>
         <span class="p-status s-live">Live Demo</span>
-        <div class="proj-title">Stock Market Prediction</div>
-        <div class="proj-type">ML Project · Finance + Data Science</div>
+        <div class="proj-title">Stock Market Prediction Model</div>
+        <div class="proj-type">Data Science · Finance · Streamlit App</div>
         <ul class="proj-ul">
-          <li>Historical data pipeline using Yahoo Finance API with feature engineering (moving averages, volatility measures, normalization)</li>
-          <li>Implemented &amp; compared Linear Regression, Random Forest, and LSTM models; selected best performer via RMSE, MAE, R²</li>
-          <li>Deployed on Streamlit with interactive trend visualization and prediction charts</li>
+          <li>End-to-end ML pipeline: data collection (Yahoo Finance API) → feature engineering (moving averages, volatility, normalization) → model training → deployment</li>
+          <li>Implemented and compared three model architectures: Linear Regression, Random Forest, and LSTM neural network — evaluated using RMSE, MAE, and R²</li>
+          <li>Deployed as an interactive Streamlit web app with live prediction visualization and trend analysis charts</li>
         </ul>
         <div class="proj-tags">
           <span class="tag">Python</span>
           <span class="tag">LSTM</span>
           <span class="tag">scikit-learn</span>
+          <span class="tag">Pandas</span>
           <span class="tag">Streamlit</span>
         </div>
         <div class="proj-links">
           <a href="https://wither60334-stock-market-prediciton-app-28b1mu.streamlit.app/" target="_blank" class="pl pl-p">Live Demo ↗</a>
+        </div>
+      </div>
+
+      <!-- SQL Ticket Management -->
+      <div class="proj-card fade-in" style="transition-delay:0.2s">
+        <div class="proj-icon">🎫</div>
+        <span class="p-status s-personal">Academic Project</span>
+        <div class="proj-title">SQL Ticket Management System</div>
+        <div class="proj-type">Database Design · SQL · Backend</div>
+        <ul class="proj-ul">
+          <li>Designed and implemented a fully normalized relational database schema for a ticket booking and management system — covering users, events, bookings, payments, and seat allocation</li>
+          <li>Wrote optimized SQL queries for complex data retrieval, concurrent transaction handling, and booking conflict resolution</li>
+          <li>Implemented proper indexing strategies, referential integrity constraints, and normalization up to 3NF for consistent performance</li>
+        </ul>
+        <div class="proj-tags">
+          <span class="tag">SQL</span>
+          <span class="tag">Database Design</span>
+          <span class="tag">Normalization</span>
+          <span class="tag">Indexing</span>
+          <span class="tag">Transactions</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/sehal27/Ticket-Management" target="_blank" class="pl pl-p">View on GitHub ↗</a>
         </div>
       </div>
 
@@ -535,52 +578,73 @@
     </div>
     <div class="sk-grid">
       <div class="sk-group fade-in">
-        <div class="sk-head"><div class="sk-icon">📋</div><span class="sk-name">Product &amp; BA</span></div>
-        <div class="sk-chips">
-          <span class="chip">BRD / FRD</span>
-          <span class="chip">User Stories</span>
-          <span class="chip">Sprint Management</span>
-          <span class="chip">Stakeholder Interviews</span>
-          <span class="chip">Process Flow Design</span>
-          <span class="chip">Edge Case Analysis</span>
-          <span class="chip">QA Coordination</span>
-          <span class="chip">Figma</span>
-        </div>
-      </div>
-      <div class="sk-group fade-in" style="transition-delay:0.1s">
-        <div class="sk-head"><div class="sk-icon">💻</div><span class="sk-name">Technical</span></div>
+        <div class="sk-head"><div class="sk-icon">💻</div><span class="sk-name">Software Development</span></div>
         <div class="sk-chips">
           <span class="chip">Next.js</span>
           <span class="chip">React</span>
           <span class="chip">TypeScript</span>
+          <span class="chip">Node.js</span>
           <span class="chip">Python</span>
+          <span class="chip">Java</span>
+          <span class="chip">C</span>
+          <span class="chip">SQL</span>
           <span class="chip">Prisma</span>
           <span class="chip">PostgreSQL</span>
-          <span class="chip">SQL</span>
-          <span class="chip">Java</span>
           <span class="chip">REST APIs</span>
+          <span class="chip">Git</span>
         </div>
       </div>
-      <div class="sk-group fade-in" style="transition-delay:0.2s">
-        <div class="sk-head"><div class="sk-icon">📊</div><span class="sk-name">Data &amp; Analytics</span></div>
+      <div class="sk-group fade-in" style="transition-delay:0.08s">
+        <div class="sk-head"><div class="sk-icon">📋</div><span class="sk-name">Product & Business Analysis</span></div>
         <div class="sk-chips">
+          <span class="chip">BRD / FRD</span>
+          <span class="chip">User Stories</span>
+          <span class="chip">Requirements Gathering</span>
+          <span class="chip">Sprint Management</span>
+          <span class="chip">Process Flow Design</span>
+          <span class="chip">Edge Case Analysis</span>
+          <span class="chip">QA Coordination</span>
+          <span class="chip">Figma</span>
+          <span class="chip">Stakeholder Management</span>
+        </div>
+      </div>
+      <div class="sk-group fade-in" style="transition-delay:0.16s">
+        <div class="sk-head"><div class="sk-icon">🧠</div><span class="sk-name">Data Science & ML</span></div>
+        <div class="sk-chips">
+          <span class="chip">scikit-learn</span>
+          <span class="chip">Pandas</span>
+          <span class="chip">LSTM</span>
+          <span class="chip">Random Forest</span>
+          <span class="chip">Feature Engineering</span>
           <span class="chip">Power BI</span>
           <span class="chip">Tableau</span>
           <span class="chip">MS Excel</span>
-          <span class="chip">Pandas</span>
-          <span class="chip">scikit-learn</span>
-          <span class="chip">Random Forest</span>
-          <span class="chip">LSTM</span>
+          <span class="chip">Streamlit</span>
         </div>
       </div>
-      <div class="sk-group fade-in" style="transition-delay:0.3s">
-        <div class="sk-head"><div class="sk-icon">💰</div><span class="sk-name">Finance</span></div>
+      <div class="sk-group fade-in" style="transition-delay:0.24s">
+        <div class="sk-head"><div class="sk-icon">💰</div><span class="sk-name">Finance & Investment</span></div>
         <div class="sk-chips">
           <span class="chip">CFA L1 Candidate</span>
           <span class="chip">Financial Modeling</span>
           <span class="chip">DCF Valuation</span>
           <span class="chip">Ratio Analysis</span>
+          <span class="chip">Equity Analysis</span>
           <span class="chip">Forecasting</span>
+          <span class="chip">P&L / Balance Sheet</span>
+        </div>
+      </div>
+      <div class="sk-group fade-in" style="transition-delay:0.32s">
+        <div class="sk-head"><div class="sk-icon">🛠️</div><span class="sk-name">Tools & Platforms</span></div>
+        <div class="sk-chips">
+          <span class="chip">Vercel</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">Figma</span>
+          <span class="chip">Flowlu</span>
+          <span class="chip">Tally Prime</span>
+          <span class="chip">Postman</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">MS Office</span>
         </div>
       </div>
     </div>
@@ -596,28 +660,80 @@
     </div>
     <div class="edu-grid">
       <div class="edu-card fade-in">
-        <div class="edu-badge-wrap"><span class="badge">Current</span></div>
-        <div class="edu-school">Pandit Deendayal Energy University</div>
+        <div class="edu-badge-wrap"><span class="badge">Graduate · 2026</span></div>
+        <div class="edu-school">Pandit Deendayal Energy University (PDEU)</div>
         <div class="edu-degree">B.Tech Computer Engineering · Gandhinagar, India</div>
-        <div class="edu-meta"><span>8.79 CGPA</span><span>Expected Jun 2026</span></div>
+        <div class="edu-meta"><span>8.84 CGPA</span><span>2022 – 2026</span></div>
       </div>
-      <div class="edu-card fade-in" style="transition-delay:0.1s">
+      <div class="edu-card fade-in" style="transition-delay:0.08s">
         <div class="edu-badge-wrap"><span class="badge" style="background:#FFF3E0;color:#BF360C;">Finance</span></div>
         <div class="edu-school">CFA Institute</div>
-        <div class="edu-degree">CFA Level 1 — Candidate (Attempted)</div>
-        <div class="edu-meta"><span>November 2025</span><span>Equity · Fixed Income · Derivatives</span></div>
+        <div class="edu-degree">CFA Level 1 — Candidate (Attempted Nov 2025)</div>
+        <div class="edu-meta"><span>Equity</span><span>Fixed Income</span><span>Derivatives</span><span>Economics</span></div>
       </div>
-      <div class="edu-card fade-in" style="transition-delay:0.15s">
-        <div class="edu-badge-wrap"><span class="badge" style="background:#F3E8FF;color:#7C3AED;">Certificate</span></div>
-        <div class="edu-school">UpGrad × PwC India</div>
-        <div class="edu-degree">Financial Modeling &amp; Analysis</div>
-        <div class="edu-meta"><span>Financial Modeling · Valuation · Forecasting</span></div>
+      <div class="edu-card fade-in" style="transition-delay:0.12s">
+        <div class="edu-badge-wrap"><span class="badge" style="background:#E3F2FD;color:#1565C0;">Class XII · Science</span></div>
+        <div class="edu-school">BEST Higher Secondary School</div>
+        <div class="edu-degree">Science Stream · Ahmedabad, India</div>
+        <div class="edu-meta"><span>75%</span><span>March 2022</span></div>
       </div>
-      <div class="edu-card fade-in" style="transition-delay:0.2s">
-        <div class="edu-badge-wrap"><span class="badge" style="background:#F3E8FF;color:#7C3AED;">Publication</span></div>
-        <div class="edu-school">IEEE Conference Paper</div>
-        <div class="edu-degree">Credit Card Fraud Detection using ML</div>
-        <div class="edu-meta"><span>Research &amp; Co-Authored Publication</span></div>
+      <div class="edu-card fade-in" style="transition-delay:0.16s">
+        <div class="edu-badge-wrap"><span class="badge" style="background:#E3F2FD;color:#1565C0;">Class X</span></div>
+        <div class="edu-school">BEST High School</div>
+        <div class="edu-degree">Secondary Education · Ahmedabad, India</div>
+        <div class="edu-meta"><span>85%</span><span>March 2020</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="container">
+    <div class="sh fade-in">
+      <div class="sh-eye">Certifications & Publications</div>
+      <h2 class="sh-title">Beyond the degree</h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card fade-in">
+        <div class="cert-icon">📰</div>
+        <div class="cert-body">
+          <div class="cert-issuer">IEEE — Published Research</div>
+          <div class="cert-name">Credit Card Fraud Detection</div>
+          <div class="cert-detail">Research paper on ML-based fraud detection published in IEEE conference proceedings</div>
+        </div>
+      </div>
+      <div class="cert-card fade-in" style="transition-delay:0.06s">
+        <div class="cert-icon">📊</div>
+        <div class="cert-body">
+          <div class="cert-issuer">UpGrad × PwC India</div>
+          <div class="cert-name">Financial Modeling & Analysis</div>
+          <div class="cert-detail">Financial Modeling, Valuation, Forecasting, Ratio Analysis</div>
+        </div>
+      </div>
+      <div class="cert-card fade-in" style="transition-delay:0.12s">
+        <div class="cert-icon">☕</div>
+        <div class="cert-body">
+          <div class="cert-issuer">Udemy</div>
+          <div class="cert-name">Java In Depth</div>
+          <div class="cert-detail">Comprehensive Java programming — OOP, data structures, algorithms, design patterns</div>
+        </div>
+      </div>
+      <div class="cert-card fade-in" style="transition-delay:0.18s">
+        <div class="cert-icon">🔐</div>
+        <div class="cert-body">
+          <div class="cert-issuer">PortSwigger / Industry</div>
+          <div class="cert-name">Cybersecurity Fundamentals</div>
+          <div class="cert-detail">Web security fundamentals including OWASP vulnerabilities, penetration testing basics</div>
+        </div>
+      </div>
+      <div class="cert-card fade-in" style="transition-delay:0.24s">
+        <div class="cert-icon">🚀</div>
+        <div class="cert-body">
+          <div class="cert-issuer">Certificate Program</div>
+          <div class="cert-name">Entrepreneurship</div>
+          <div class="cert-detail">Startup fundamentals, business model design, go-to-market strategy</div>
+        </div>
       </div>
     </div>
   </div>
@@ -629,8 +745,8 @@
     <div class="rc-inner fade-in">
       <div class="sh-eye">Resume</div>
       <h2>Want the full picture?</h2>
-      <p>Download my ATS-optimized resume for BA, PM, and APM roles — highlighting requirements gathering, product thinking, sprint ownership, and technical depth.</p>
-      <a href="resume.html" target="_blank" class="btn-primary">View &amp; Download Resume ↗</a>
+      <p>Download my resume — built to be ATS-friendly and readable by humans. It covers all experience, projects, education, and skills in a clean one-pager.</p>
+      <a href="resume.html" target="_blank" class="btn-primary">View & Download Resume ↗</a>
     </div>
   </div>
 </section>
@@ -641,23 +757,27 @@
     <div class="sh fade-in">
       <div class="sh-eye">Contact</div>
       <h2 class="sh-title">Let's talk</h2>
-      <p class="sh-sub">Open to BA, PM, APM roles — and always up for interesting product conversations</p>
+      <p class="sh-sub">Open to opportunities across tech, product, data, and business roles</p>
     </div>
     <div class="contact-grid">
       <div class="fade-in">
-        <p class="contact-intro">I'm actively looking for full-time BA, Product Analyst, or APM opportunities starting mid-2026. If you're hiring or just want to talk product, I'd love to hear from you.</p>
+        <p class="contact-intro">I'm actively looking for full-time roles where I can bring my mix of technical, analytical, and business skills to work that matters. If you're building something interesting, I'd love to hear about it.</p>
         <div class="c-links">
           <a href="mailto:maheshwarisehal27@gmail.com" class="c-link">
-            <div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-dark)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div class="c-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--accent-dark)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
             <div><div class="c-label">Email</div><div class="c-val">maheshwarisehal27@gmail.com</div></div>
           </a>
           <a href="https://linkedin.com/in/sehal-maheshwari-738091260" target="_blank" class="c-link">
-            <div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--accent-dark)"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></div>
+            <div class="c-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="var(--accent-dark)"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></div>
             <div><div class="c-label">LinkedIn</div><div class="c-val">sehal-maheshwari-738091260</div></div>
           </a>
           <a href="https://github.com/sehal27" target="_blank" class="c-link">
-            <div class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--accent-dark)"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></div>
+            <div class="c-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="var(--accent-dark)"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></div>
             <div><div class="c-label">GitHub</div><div class="c-val">github.com/sehal27</div></div>
+          </a>
+          <a href="tel:+919265108149" class="c-link">
+            <div class="c-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--accent-dark)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.87a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><div class="c-label">Phone</div><div class="c-val">+91 92651 08149</div></div>
           </a>
         </div>
       </div>
@@ -674,7 +794,7 @@
           </div>
           <div class="fg">
             <label for="f-msg">Message</label>
-            <textarea id="f-msg" placeholder="Tell me about the opportunity or just say hi!" required></textarea>
+            <textarea id="f-msg" placeholder="Tell me about the role or project — I read every message." required></textarea>
           </div>
           <button type="submit" class="btn-primary" style="width:100%">Send Message</button>
         </form>
@@ -685,15 +805,15 @@
 
 <footer>
   <div class="container">
-    <p>Designed &amp; built by Sehal Maheshwari &nbsp;·&nbsp; <a href="mailto:maheshwarisehal27@gmail.com">maheshwarisehal27@gmail.com</a></p>
-    <p style="margin-top:6px">© 2026 · Ahmedabad, India</p>
+    <p>Designed & built by Sehal Maheshwari &nbsp;·&nbsp; <a href="mailto:maheshwarisehal27@gmail.com">maheshwarisehal27@gmail.com</a></p>
+    <p style="margin-top:6px">© 2026 · Ahmedabad, India &nbsp;·&nbsp; <a href="https://sehal27.github.io">sehal27.github.io</a></p>
   </div>
 </footer>
 
 <script>
   const observer = new IntersectionObserver(
     entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-    { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
+    { threshold: 0.07, rootMargin: '0px 0px -30px 0px' }
   );
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
@@ -712,6 +832,16 @@
     const msg = document.getElementById('f-msg').value;
     window.location.href = `mailto:maheshwarisehal27@gmail.com?subject=${encodeURIComponent('Portfolio Inquiry from ' + name)}&body=${encodeURIComponent('Hi Sehal,\n\n' + msg + '\n\n— ' + name + ' (' + email + ')')}`;
   }
+
+  // Fix featured card on mobile
+  function checkGrid() {
+    const featured = document.querySelector('.proj-card.featured');
+    if (featured) {
+      featured.style.gridColumn = window.innerWidth < 760 ? 'span 1' : 'span 2';
+    }
+  }
+  checkGrid();
+  window.addEventListener('resize', checkGrid);
 </script>
 </body>
 </html>

@@ -7,133 +7,83 @@
   <style>
     @media print {
       .no-print { display: none !important; }
-      body { padding: 0; margin: 0; }
-      .page { padding: 28px 36px; }
+      body { padding: 0; margin: 0; background: white; }
+      .page { box-shadow: none; margin: 0; padding: 24px 32px; }
     }
     @page { margin: 0.5in; }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 10.5pt;
-      color: #111;
-      background: #f5f5f5;
-      line-height: 1.42;
-    }
+    body { font-family: Arial, Helvetica, sans-serif; font-size: 10.5pt; color: #111; background: #f0f0f0; line-height: 1.42; }
 
     .no-print {
-      background: #5A9060;
-      color: white;
-      padding: 14px 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      font-size: 0.9rem;
-      font-family: Arial, sans-serif;
+      background: #5A9060; color: white; padding: 13px 24px;
+      display: flex; align-items: center; justify-content: center; gap: 20px;
+      font-size: 0.88rem; font-family: Arial, sans-serif;
     }
-    .no-print button {
-      background: white;
-      color: #5A9060;
-      border: none;
-      padding: 8px 22px;
-      border-radius: 100px;
-      font-weight: 700;
-      cursor: pointer;
-      font-size: 0.88rem;
-    }
-    .no-print a { color: white; text-decoration: underline; font-size: 0.88rem; }
+    .no-print button { background: white; color: #5A9060; border: none; padding: 7px 20px; border-radius: 100px; font-weight: 700; cursor: pointer; font-size: 0.86rem; }
+    .no-print a { color: white; text-decoration: underline; font-size: 0.86rem; }
 
-    .page {
-      max-width: 780px;
-      margin: 20px auto;
-      background: white;
-      padding: 36px 44px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.1);
-    }
-    @media print { .page { box-shadow: none; margin: 0; } }
+    .page { max-width: 800px; margin: 20px auto; background: white; padding: 34px 42px; box-shadow: 0 4px 24px rgba(0,0,0,0.1); }
 
-    /* Header */
-    .r-head { border-bottom: 2.5px solid #5A9060; padding-bottom: 14px; margin-bottom: 18px; }
-    .r-name  { font-size: 22pt; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 3px; }
-    .r-title { font-size: 10.5pt; color: #5A9060; font-weight: 700; margin-bottom: 9px; }
-    .r-contact {
-      font-size: 9.2pt; color: #444;
-      display: flex; flex-wrap: wrap; gap: 3px 0; align-items: center;
-    }
-    .r-contact span { padding: 0 10px; border-right: 1px solid #ccc; }
+    .r-head { border-bottom: 2.5px solid #5A9060; padding-bottom: 13px; margin-bottom: 16px; }
+    .r-name  { font-size: 21pt; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 3px; }
+    .r-title { font-size: 10pt; color: #5A9060; font-weight: 700; margin-bottom: 8px; }
+    .r-contact { font-size: 9pt; color: #444; display: flex; flex-wrap: wrap; gap: 0; align-items: center; }
+    .r-contact span { padding: 0 9px; border-right: 1px solid #ccc; }
     .r-contact span:first-child { padding-left: 0; }
     .r-contact span:last-child  { border-right: none; }
     .r-contact a { color: #444; }
 
-    /* Section */
-    .sec { margin-bottom: 16px; }
-    .sec-title {
-      font-size: 9.5pt; font-weight: 700; text-transform: uppercase;
-      letter-spacing: 0.09em; color: #5A9060;
-      border-bottom: 1px solid #C5DCC5; padding-bottom: 3px; margin-bottom: 10px;
-    }
+    .sec { margin-bottom: 15px; }
+    .sec-title { font-size: 9.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: #5A9060; border-bottom: 1px solid #C5DCC5; padding-bottom: 3px; margin-bottom: 9px; }
 
-    /* Summary */
     .summary { font-size: 10pt; color: #333; line-height: 1.55; }
 
-    /* Experience item */
-    .ei { margin-bottom: 13px; }
+    .ei { margin-bottom: 12px; }
     .ei:last-child { margin-bottom: 0; }
-    .ei-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .ei-top  { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
     .ei-co   { font-weight: 700; font-size: 10.5pt; }
     .ei-date { font-size: 9pt; color: #555; white-space: nowrap; }
     .ei-role { font-size: 10pt; color: #5A9060; font-weight: 700; font-style: italic; margin: 1px 0 5px; }
     .ei-ul   { padding-left: 16px; }
-    .ei-ul li { font-size: 10pt; color: #333; line-height: 1.48; margin-bottom: 3px; }
+    .ei-ul li { font-size: 10pt; color: #333; line-height: 1.47; margin-bottom: 3px; }
 
-    /* Projects */
-    .pi { margin-bottom: 12px; }
+    .pi { margin-bottom: 11px; }
     .pi:last-child { margin-bottom: 0; }
-    .pi-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .pi-top  { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
     .pi-name { font-weight: 700; font-size: 10.5pt; }
     .pi-link { font-size: 9pt; color: #5A9060; }
     .pi-sub  { font-size: 10pt; color: #5A9060; font-style: italic; font-weight: 700; margin: 1px 0 5px; }
     .pi-ul   { padding-left: 16px; }
-    .pi-ul li { font-size: 10pt; color: #333; line-height: 1.48; margin-bottom: 3px; }
+    .pi-ul li { font-size: 10pt; color: #333; line-height: 1.47; margin-bottom: 3px; }
 
-    /* Skills table */
     .sk-table { width: 100%; border-collapse: collapse; }
     .sk-table td { font-size: 10pt; padding: 3px 0; vertical-align: top; }
-    .sk-table td:first-child { font-weight: 700; color: #222; width: 148px; padding-right: 10px; white-space: nowrap; }
+    .sk-table td:first-child { font-weight: 700; color: #222; width: 155px; padding-right: 10px; white-space: nowrap; }
 
-    /* Education */
-    .edu-item { margin-bottom: 9px; }
+    .edu-item { margin-bottom: 8px; }
     .edu-item:last-child { margin-bottom: 0; }
     .edu-top  { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
     .edu-co   { font-weight: 700; font-size: 10.5pt; }
     .edu-date { font-size: 9pt; color: #555; white-space: nowrap; }
     .edu-det  { font-size: 10pt; color: #333; }
 
-    /* Certs */
-    .cert-item { font-size: 10pt; color: #333; margin-bottom: 4px; }
-
-    @media (max-width: 600px) {
-      .page { padding: 20px 18px; }
-      .ei-top, .pi-top, .edu-top { flex-direction: column; gap: 0; }
-    }
+    .cert-item { font-size: 10pt; color: #333; margin-bottom: 3px; }
   </style>
 </head>
 <body>
 
 <div class="no-print">
-  <span>ATS-Optimized Resume &nbsp;·&nbsp; BA · Product Analyst · APM Roles</span>
+  <span>Sehal Maheshwari — Resume</span>
   <button onclick="window.print()">⬇ Save as PDF</button>
   <a href="index.html">← Back to Portfolio</a>
 </div>
 
 <div class="page">
 
-  <!-- HEADER -->
   <div class="r-head">
     <div class="r-name">Sehal Maheshwari</div>
-    <div class="r-title">Business Analyst · Product Analyst · Associate Product Manager</div>
+    <div class="r-title">Software Engineer · Business Analyst · Product Builder · Data Enthusiast</div>
     <div class="r-contact">
       <span>Ahmedabad, India</span>
       <span>+91 92651 08149</span>
@@ -144,15 +94,13 @@
     </div>
   </div>
 
-  <!-- SUMMARY -->
   <div class="sec">
     <div class="sec-title">Professional Summary</div>
     <p class="summary">
-      Final-year Computer Engineering student at PDEU (8.79 CGPA) with hands-on experience as a Business Analyst intern — owning end-to-end requirements gathering, BRD/FRD authoring, sprint management, and stakeholder communication across enterprise and SaaS products. Complemented by data analytics experience (88% accuracy ML model, HR attrition analysis for 1,435 employees) and a track record of shipping production-grade full-stack applications independently. Seeking BA, Product Analyst, or APM roles where technical depth meets business strategy.
+      Computer Engineering graduate from PDEU (8.84 CGPA) with a cross-functional profile spanning software development, business analysis, machine learning, and financial analysis. Built and deployed production-grade full-stack applications, managed product sprints and client requirements at a SaaS company, trained ML models for government deployments, and co-founded an AI startup — all independently. Comfortable moving between client boardrooms, product documentation, and codebases.
     </p>
   </div>
 
-  <!-- EXPERIENCE -->
   <div class="sec">
     <div class="sec-title">Professional Experience</div>
 
@@ -163,12 +111,11 @@
       </div>
       <div class="ei-role">Business Analyst Intern</div>
       <ul class="ei-ul">
-        <li>Conducted on-site client discovery from Day 2 — led stakeholder interviews and site visits to map end-to-end workflows for a new enterprise Site Management System</li>
-        <li>Authored BRD, FRD, system architecture documentation, process flow diagrams, and HTML wireframes from scratch for a greenfield enterprise platform</li>
-        <li>Audited existing documentation for Pixally CRM (a HoneyBook competitor for photographers) — identified 30+ critical requirement gaps and missing edge cases across product modules</li>
-        <li>Owned the sprint lifecycle end-to-end: wrote user stories in Flowlu, assigned to developers, unblocked technical queries, managed QA reviews, and coordinated delivery cycles</li>
-        <li>Rebuilt subscription module requirements from near-zero — authored 200+ edge cases and test cases; researched and fully documented Rewardful affiliate API integration plan</li>
-        <li>Participated in client meetings to clarify ambiguous product flows, updated FRD and Figma prototypes in real time, ensuring zero information loss in developer handoffs</li>
+        <li>Led requirements gathering for enterprise software products — on-site client visits, stakeholder discussions, and workflow mapping across two live projects</li>
+        <li>Authored Business Requirement Documents (BRD), Functional Requirement Documents (FRD), system architecture, process flow diagrams, and UI wireframes from scratch for greenfield platform development</li>
+        <li>Managed end-to-end sprint coordination for Pixally CRM — a SaaS platform for photography businesses — including user story creation, developer task assignment, QA review management, and client delivery</li>
+        <li>Rebuilt subscription module documentation from the ground up: authored 200+ test cases and edge case scenarios, documented third-party affiliate API (Rewardful) integration specifications</li>
+        <li>Maintained continuous alignment between evolving client requirements, Figma prototypes, FRDs, and development team — serving as the single communication bridge across all stakeholders</li>
       </ul>
     </div>
 
@@ -179,9 +126,9 @@
       </div>
       <div class="ei-role">Data Analyst Intern</div>
       <ul class="ei-ul">
-        <li>Designed and deployed a traffic prediction model for Ahmedabad Municipal Corporation using pincode-level and weather data — achieved 88% accuracy with Random Forest Classifier</li>
-        <li>Analyzed HR dataset for 1,435 employees, identified attrition patterns, and delivered actionable insights projected to reduce employee turnover by 15%</li>
-        <li>Cleaned and preprocessed 10,000+ rows of raw data, improving data quality and boosting model performance by 98%</li>
+        <li>Built a traffic prediction model for Ahmedabad Municipal Corporation using pincode-level and weather data — achieved 88% accuracy with Random Forest Classifier</li>
+        <li>Analyzed HR data for 1,435 employees, identified key attrition drivers, and delivered insights supporting a projected 15% reduction in employee turnover</li>
+        <li>Cleaned and preprocessed 10,000+ rows of raw operational data, significantly improving data quality and model reliability</li>
       </ul>
     </div>
 
@@ -192,85 +139,104 @@
       </div>
       <div class="ei-role">Social Intern</div>
       <ul class="ei-ul">
-        <li>Led the Thol Project under UNESCO umbrella — community mobilization for plastic-free initiative; managed fundraising, grant writing, and CSR stakeholder engagement</li>
+        <li>Led the Thol Project under UNESCO umbrella — community mobilization for plastic-free town initiative; managed fundraising, grant writing, and CSR stakeholder outreach</li>
       </ul>
     </div>
   </div>
 
-  <!-- PROJECTS -->
   <div class="sec">
     <div class="sec-title">Projects</div>
 
     <div class="pi">
       <div class="pi-top">
-        <span class="pi-name">BLP Inventory ERP — Full-Stack Manufacturing &amp; Sales Platform</span>
-        <span class="pi-link">blp-inventory.vercel.app</span>
+        <span class="pi-name">BLP Inventory ERP — Full-Stack Manufacturing & Sales Platform</span>
+        <span class="pi-link">blp-inventory.vercel.app (Live)</span>
       </div>
-      <div class="pi-sub">Next.js · TypeScript · Prisma · PostgreSQL (Neon) · Vercel · Python</div>
+      <div class="pi-sub">Next.js · TypeScript · Prisma · PostgreSQL · Python · Vercel · JWT</div>
       <ul class="pi-ul">
-        <li>Built and deployed an end-to-end ERP for a PVC pipe manufacturing business covering production, inventory, dispatch, bend processing, packing, and quotations across multiple user roles</li>
-        <li>Integrated Tally Prime accounting via a Python bridge — auto-syncing sales invoices and mapping 160+ products for one-click dispatch; quotation module generates branded A4 PDFs with dynamic GST logic</li>
-        <li>Implemented role-based access control, single-device login enforcement, rate limiting, and JWT session security</li>
+        <li>Built and deployed end-to-end ERP solo for a PVC pipe manufacturing business — covers production, inventory, dispatch, bend processing, packing, and quotations across multiple user roles</li>
+        <li>Custom Python bridge for Tally Prime accounting integration: auto-syncs invoices and maps 160+ products; PDF quotation module with dynamic GST, discount logic, and live pricing for 2 companies</li>
+        <li>Role-based access control, single-device login enforcement, rate limiting, and JWT session security; complex inventory modeling with unit conversions (bundle/piece/carton)</li>
       </ul>
     </div>
 
     <div class="pi">
       <div class="pi-top">
-        <span class="pi-name">Saathi AI — Voice-First AI Emotional Companion</span>
-        <span class="pi-link">In Development</span>
+        <span class="pi-name">Saathi AI — AI Emotional Companion App</span>
+        <span class="pi-link">In Development · Founder</span>
       </div>
-      <div class="pi-sub">Founder &amp; Solo Builder · Next.js 16 · Claude API · Sarvam.ai TTS · Neon PostgreSQL</div>
+      <div class="pi-sub">Next.js 16 · Claude API · Sarvam.ai · Neon PostgreSQL · Vercel</div>
       <ul class="pi-ul">
-        <li>Designing an AI companion app rooted in Bhagavad Gita wisdom for Indian working professionals; built 18-chapter Gita wisdom engine (14,000+ lines) with 200-question emotional response bank and crisis detection</li>
-        <li>Authored complete product BRD, character system, and crisis protocol (iCall/Vandrevala integration) from scratch; solo-built MVP on Vercel</li>
+        <li>Designing and building a voice-first Hinglish AI companion rooted in Bhagavad Gita wisdom for Indian working professionals; authored full product BRD, character system, and crisis protocol</li>
+        <li>Built 18-chapter Gita wisdom engine (14,000+ lines) with 200-question emotional response bank and crisis detection integrating iCall and Vandrevala Foundation helplines</li>
+      </ul>
+    </div>
+
+    <div class="pi">
+      <div class="pi-top">
+        <span class="pi-name">FNO Trading Bot — NIFTY Signal Engine</span>
+        <span class="pi-link">Private Project</span>
+      </div>
+      <div class="pi-sub">Python · Machine Learning · Telegram API · Financial Data APIs</div>
+      <ul class="pi-ul">
+        <li>ML-driven signal engine for NIFTY F&O trading with 78% historical win rate; monitors global market cues, VIX, and financial news; delivers automated Telegram alerts with entry/target/stop-loss levels</li>
       </ul>
     </div>
 
     <div class="pi">
       <div class="pi-top">
         <span class="pi-name">Stock Market Prediction Model</span>
-        <span class="pi-link">Deployed on Streamlit</span>
+        <span class="pi-link">Live on Streamlit</span>
       </div>
       <div class="pi-sub">Python · scikit-learn · LSTM · Pandas · Streamlit · Yahoo Finance API</div>
       <ul class="pi-ul">
-        <li>Implemented and compared Linear Regression, Random Forest, and LSTM models with feature engineering; evaluated via RMSE, MAE, R² — deployed with interactive Streamlit dashboard</li>
+        <li>End-to-end ML pipeline with feature engineering; compared Linear Regression, Random Forest, and LSTM models; deployed as interactive Streamlit app with prediction visualization</li>
+      </ul>
+    </div>
+
+    <div class="pi">
+      <div class="pi-top">
+        <span class="pi-name">SQL Ticket Management System</span>
+        <span class="pi-link">github.com/sehal27/Ticket-Management</span>
+      </div>
+      <div class="pi-sub">SQL · Database Design · Normalization</div>
+      <ul class="pi-ul">
+        <li>Designed normalized relational database schema for ticket booking; implemented optimized queries, transaction handling, indexing strategies, and 3NF normalization for consistent performance</li>
       </ul>
     </div>
   </div>
 
-  <!-- SKILLS -->
   <div class="sec">
     <div class="sec-title">Skills</div>
     <table class="sk-table">
       <tr>
+        <td>Software Dev</td>
+        <td>Next.js, React, TypeScript, Node.js, Python, Java, C, SQL, Prisma ORM, PostgreSQL, REST APIs, Git</td>
+      </tr>
+      <tr>
         <td>Product / BA</td>
-        <td>Requirements Gathering, BRD/FRD Authoring, User Stories, Sprint Management, Process Flow Design, Edge Case Analysis, QA Coordination, Stakeholder Interviews, Figma, Flowlu</td>
+        <td>Requirements Gathering, BRD/FRD, User Stories, Sprint Management, Process Flow Design, Edge Case Analysis, QA Coordination, Stakeholder Management, Figma, Flowlu</td>
       </tr>
       <tr>
-        <td>Technical</td>
-        <td>Next.js, React, TypeScript, Python, Java, Prisma ORM, PostgreSQL, SQL, REST APIs, Git, Vercel</td>
-      </tr>
-      <tr>
-        <td>Data &amp; Analytics</td>
-        <td>Power BI, Tableau, MS Excel, Pandas, scikit-learn, Random Forest, LSTM, Feature Engineering</td>
+        <td>Data Science & ML</td>
+        <td>scikit-learn, Pandas, LSTM, Random Forest, Feature Engineering, Power BI, Tableau, MS Excel, Streamlit</td>
       </tr>
       <tr>
         <td>Finance</td>
-        <td>CFA Level 1 Candidate (Attempted Nov 2025), Financial Modeling, DCF Valuation, Ratio Analysis, Forecasting</td>
+        <td>CFA Level 1 Candidate (Attempted), Financial Modeling, DCF Valuation, Ratio Analysis, Equity Analysis, Forecasting</td>
       </tr>
     </table>
   </div>
 
-  <!-- EDUCATION -->
   <div class="sec">
     <div class="sec-title">Education</div>
 
     <div class="edu-item">
       <div class="edu-top">
         <span class="edu-co">Pandit Deendayal Energy University (PDEU), Gandhinagar</span>
-        <span class="edu-date">Expected Jun 2026</span>
+        <span class="edu-date">2022 – 2026</span>
       </div>
-      <div class="edu-det">B.Tech Computer Engineering &nbsp;·&nbsp; <strong>8.79 CGPA</strong></div>
+      <div class="edu-det">B.Tech Computer Engineering &nbsp;·&nbsp; <strong>8.84 CGPA</strong></div>
     </div>
 
     <div class="edu-item">
@@ -280,16 +246,33 @@
       </div>
       <div class="edu-det">CFA Level 1 — Candidate (Attempted) &nbsp;·&nbsp; Equity, Fixed Income, Derivatives, Economics, Ethics</div>
     </div>
+
+    <div class="edu-item">
+      <div class="edu-top">
+        <span class="edu-co">BEST Higher Secondary School, Ahmedabad</span>
+        <span class="edu-date">March 2022</span>
+      </div>
+      <div class="edu-det">Class XII — Science Stream &nbsp;·&nbsp; 75%</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-top">
+        <span class="edu-co">BEST High School, Ahmedabad</span>
+        <span class="edu-date">March 2020</span>
+      </div>
+      <div class="edu-det">Class X &nbsp;·&nbsp; 85%</div>
+    </div>
   </div>
 
-  <!-- CERTIFICATIONS -->
   <div class="sec">
-    <div class="sec-title">Certifications &amp; Publications</div>
-    <div class="cert-item">Financial Modeling &amp; Analysis with PwC India — UpGrad &nbsp;·&nbsp; Financial Modeling, Valuation, Forecasting</div>
-    <div class="cert-item">Research Paper: Credit Card Fraud Detection using Machine Learning — Published in IEEE</div>
-    <div class="cert-item">Java In Depth — Udemy &nbsp;·&nbsp; Cybersecurity Fundamentals &nbsp;·&nbsp; Entrepreneurship Certificate</div>
+    <div class="sec-title">Certifications & Publications</div>
+    <div class="cert-item"><strong>IEEE:</strong> Research Paper — Credit Card Fraud Detection using Machine Learning (Published)</div>
+    <div class="cert-item"><strong>UpGrad × PwC India:</strong> Financial Modeling & Analysis — Financial Modeling, Valuation, Forecasting</div>
+    <div class="cert-item"><strong>Udemy:</strong> Java In Depth — OOP, Data Structures, Design Patterns</div>
+    <div class="cert-item"><strong>PortSwigger / Industry:</strong> Cybersecurity Fundamentals — Web Security, OWASP, Penetration Testing Basics</div>
+    <div class="cert-item"><strong>Certificate Program:</strong> Entrepreneurship — Business Model Design, Go-to-Market Strategy</div>
   </div>
 
-</div><!-- end .page -->
+</div>
 </body>
 </html>
