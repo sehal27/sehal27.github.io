@@ -75,7 +75,7 @@
     .social-btn:hover { background: var(--accent-light); border-color: var(--accent); transform: translateY(-2px); }
     .hero-photo-wrap { display: flex; align-items: center; justify-content: center; }
     .hero-photo { width: 290px; height: 290px; border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%; background: var(--bg2); border: 3px solid var(--border); overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 4.5rem; font-weight: 800; color: var(--accent-dark); animation: morph 9s ease-in-out infinite; flex-shrink: 0; }
-    .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 28%; }
     @keyframes morph { 0%,100% { border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%; } 50% { border-radius: 60% 40% 40% 60% / 60% 60% 40% 40%; } }
     .hero-stats { display: flex; gap: 28px; padding-top: 32px; border-top: 1px solid var(--border); margin-top: 32px; flex-wrap: wrap; }
     .stat-num   { font-size: 1.5rem; font-weight: 800; color: var(--accent-dark); line-height: 1; }
@@ -168,7 +168,27 @@
     .cert-body { }
     .cert-issuer { font-size: 0.74rem; color: var(--accent-dark); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3px; }
     .cert-name { font-weight: 700; font-size: 0.92rem; margin-bottom: 3px; }
-    .cert-detail { font-size: 0.82rem; color: var(--text2); line-height: 1.4; }
+    .cert-detail { font-size: 0.82rem; color: var(--text2); line-height: 1.4; margin-bottom: 8px; }
+    .cert-link { display: inline-block; font-size: 0.78rem; font-weight: 700; color: var(--accent-dark); background: var(--accent-light); padding: 3px 10px; border-radius: 100px; transition: background 0.2s; }
+    .cert-link:hover { background: #C8E6C9; }
+    .cert-link.disabled { color: var(--text2); background: var(--bg2); cursor: default; pointer-events: none; }
+
+    /* ── SCREENSHOT GALLERY ── */
+    .ss-strip { display: flex; gap: 10px; overflow-x: auto; margin-top: 20px; padding-bottom: 6px; scroll-snap-type: x mandatory; }
+    .ss-strip::-webkit-scrollbar { height: 4px; }
+    .ss-strip::-webkit-scrollbar-track { background: var(--bg2); border-radius: 2px; }
+    .ss-strip::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+    .ss-thumb { flex-shrink: 0; width: 220px; height: 138px; object-fit: cover; object-position: top left; border-radius: 8px; border: 1px solid var(--border); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; scroll-snap-align: start; }
+    .ss-thumb:hover { transform: scale(1.03); box-shadow: var(--shadow-hover); }
+    .ss-label { font-size: 0.76rem; color: var(--text2); margin-top: 8px; font-weight: 500; }
+
+    /* ── LIGHTBOX ── */
+    .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.88); z-index: 500; align-items: center; justify-content: center; padding: 20px; }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: min(92vw, 1100px); max-height: 88vh; border-radius: 10px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+    .lb-close { position: absolute; top: 18px; right: 22px; color: white; font-size: 2rem; cursor: pointer; background: none; border: none; line-height: 1; opacity: 0.8; transition: opacity 0.2s; }
+    .lb-close:hover { opacity: 1; }
+    .lb-caption { position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); color: white; font-size: 0.88rem; background: rgba(0,0,0,0.5); padding: 6px 16px; border-radius: 100px; white-space: nowrap; font-family: var(--font); }
 
     /* ── RESUME CTA ── */
     #resume-cta { background: linear-gradient(135deg, #EAF3EA, #F5F0E8); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 70px 0; }
@@ -434,7 +454,7 @@
     <div class="proj-grid">
 
       <!-- BLP ERP - featured -->
-      <div class="proj-card featured fade-in" style="grid-column: span 2;">
+      <div class="proj-card featured fade-in" style="grid-column: span 2; cursor: default;">
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start;">
           <div>
             <div class="proj-icon">🏭</div>
@@ -459,6 +479,7 @@
           </div>
           <div>
             <ul class="proj-ul">
+
               <li>Covers the full manufacturing cycle: raw material inventory → production → semi-finished stock → bend processing → packing → finished goods dispatch</li>
               <li>Multi-company support with separate quotation systems for 2 businesses — PDF quote generation with dynamic GST (CGST/SGST/IGST), discount logic, and live pricing pulled from spreadsheets</li>
               <li>Tally Prime accounting integration via a custom Python bridge — auto-syncs sales invoices and maps 160+ products between the ERP and Tally for one-click dispatch</li>
@@ -466,6 +487,18 @@
               <li>Role-based access control across production, dispatch, admin, and management roles with single-device login enforcement, rate limiting, and JWT session security</li>
               <li>Complex inventory modeling: unit conversions between bundle, piece, and carton; separate tracking of semi-finished vs. finished stock</li>
             </ul>
+          </div>
+        </div>
+        <!-- Screenshot gallery -->
+        <div style="border-top: 1px solid var(--border); margin-top: 20px; padding-top: 18px;">
+          <div class="ss-label">📸 Real screens from the live app — click any to enlarge</div>
+          <div class="ss-strip">
+            <img class="ss-thumb" src="assets/blp/dashboard.png"  alt="BLP Dashboard"   data-caption="Dashboard — live metrics, quick actions, recent dispatches" onclick="openLB(this)">
+            <img class="ss-thumb" src="assets/blp/inventory.png"  alt="BLP Inventory"   data-caption="Inventory — 483 products, 59,695 total stock across all categories" onclick="openLB(this)">
+            <img class="ss-thumb" src="assets/blp/quotation.png"  alt="BLP Quotation"   data-caption="Create Quotation — multi-company, dynamic GST, live pricing" onclick="openLB(this)">
+            <img class="ss-thumb" src="assets/blp/dispatch.png"   alt="BLP Dispatch"    data-caption="Dispatch — one-click Tally Invoice sync" onclick="openLB(this)">
+            <img class="ss-thumb" src="assets/blp/reports.png"    alt="BLP Reports"     data-caption="Production Reports — date-wise machine output tracking" onclick="openLB(this)">
+            <img class="ss-thumb" src="assets/blp/auditlogs.png"  alt="BLP Audit Logs"  data-caption="Audit Logs — full user action trail across all roles" onclick="openLB(this)">
           </div>
         </div>
       </div>
@@ -539,6 +572,52 @@
         </div>
         <div class="proj-links">
           <a href="https://wither60334-stock-market-prediciton-app-28b1mu.streamlit.app/" target="_blank" class="pl pl-p">Live Demo ↗</a>
+        </div>
+      </div>
+
+      <!-- Infosys Valuation -->
+      <div class="proj-card fade-in" style="transition-delay:0.18s">
+        <div class="proj-icon">📉</div>
+        <span class="p-status s-personal">Finance Project</span>
+        <div class="proj-title">Infosys Equity Valuation & Forecasting</div>
+        <div class="proj-type">Financial Modeling · Equity Analysis · Excel</div>
+        <ul class="proj-ul">
+          <li>Valued Infosys using four methodologies: DDM (Gordon Growth, H-Model, multi-stage), DCF, Net Asset Value, and Market Capitalisation approach</li>
+          <li>Forecasted stock price using Excel-based financial modeling and built a comprehensive buying/selling strategy</li>
+          <li>Benchmarked Infosys's financial ratios and equity multiples against TCS and Wipro — delivered investment recommendation via structured PPT analysis</li>
+        </ul>
+        <div class="proj-tags">
+          <span class="tag">DCF Valuation</span>
+          <span class="tag">DDM</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Equity Analysis</span>
+          <span class="tag">Ratio Comparison</span>
+        </div>
+        <div class="proj-links">
+          <span class="pl pl-s">Course Project · FMA with PwC India</span>
+        </div>
+      </div>
+
+      <!-- KTC Ratio Analysis -->
+      <div class="proj-card fade-in" style="transition-delay:0.22s">
+        <div class="proj-icon">🏦</div>
+        <span class="p-status s-personal">Finance Project</span>
+        <div class="proj-title">KTC Financial Health & Ratio Analysis</div>
+        <div class="proj-type">Financial Statements · Ratio Analysis · Excel</div>
+        <ul class="proj-ul">
+          <li>Prepared P&L Statement, Balance Sheet, and Cash Flow Statement for FY 2022–23 from trial balance data</li>
+          <li>Calculated and interpreted 15+ financial ratios across liquidity, profitability, efficiency, and solvency categories</li>
+          <li>Assessed KTC's overall financial position and delivered a data-backed recommendation on loan acceptance</li>
+        </ul>
+        <div class="proj-tags">
+          <span class="tag">Ratio Analysis</span>
+          <span class="tag">P&L / Balance Sheet</span>
+          <span class="tag">Cash Flow</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Financial Assessment</span>
+        </div>
+        <div class="proj-links">
+          <span class="pl pl-s">Course Project · FMA with PwC India</span>
         </div>
       </div>
 
@@ -700,7 +779,8 @@
         <div class="cert-body">
           <div class="cert-issuer">IEEE — Published Research</div>
           <div class="cert-name">Credit Card Fraud Detection</div>
-          <div class="cert-detail">Research paper on ML-based fraud detection published in IEEE conference proceedings</div>
+          <div class="cert-detail">Research paper on ML-based fraud detection, published in IEEE conference proceedings</div>
+          <a href="ADD_IEEE_PAPER_LINK_HERE" target="_blank" class="cert-link disabled">View Paper ↗</a>
         </div>
       </div>
       <div class="cert-card fade-in" style="transition-delay:0.06s">
@@ -709,6 +789,7 @@
           <div class="cert-issuer">UpGrad × PwC India</div>
           <div class="cert-name">Financial Modeling & Analysis</div>
           <div class="cert-detail">Financial Modeling, Valuation, Forecasting, Ratio Analysis</div>
+          <a href="ADD_UPGRAD_CERT_LINK_HERE" target="_blank" class="cert-link disabled">View Certificate ↗</a>
         </div>
       </div>
       <div class="cert-card fade-in" style="transition-delay:0.12s">
@@ -716,7 +797,8 @@
         <div class="cert-body">
           <div class="cert-issuer">Udemy</div>
           <div class="cert-name">Java In Depth</div>
-          <div class="cert-detail">Comprehensive Java programming — OOP, data structures, algorithms, design patterns</div>
+          <div class="cert-detail">Comprehensive Java — OOP, data structures, algorithms, design patterns</div>
+          <a href="ADD_UDEMY_CERT_LINK_HERE" target="_blank" class="cert-link disabled">View Certificate ↗</a>
         </div>
       </div>
       <div class="cert-card fade-in" style="transition-delay:0.18s">
@@ -724,7 +806,8 @@
         <div class="cert-body">
           <div class="cert-issuer">PortSwigger / Industry</div>
           <div class="cert-name">Cybersecurity Fundamentals</div>
-          <div class="cert-detail">Web security fundamentals including OWASP vulnerabilities, penetration testing basics</div>
+          <div class="cert-detail">Web security, OWASP vulnerabilities, penetration testing basics</div>
+          <a href="ADD_CYBERSEC_CERT_LINK_HERE" target="_blank" class="cert-link disabled">View Certificate ↗</a>
         </div>
       </div>
       <div class="cert-card fade-in" style="transition-delay:0.24s">
@@ -733,6 +816,7 @@
           <div class="cert-issuer">Certificate Program</div>
           <div class="cert-name">Entrepreneurship</div>
           <div class="cert-detail">Startup fundamentals, business model design, go-to-market strategy</div>
+          <a href="ADD_ENTREPRENEURSHIP_CERT_LINK_HERE" target="_blank" class="cert-link disabled">View Certificate ↗</a>
         </div>
       </div>
     </div>
@@ -803,6 +887,13 @@
   </div>
 </section>
 
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLB()">
+  <button class="lb-close" onclick="closeLB()">✕</button>
+  <img id="lb-img" src="" alt="">
+  <div class="lb-caption" id="lb-caption"></div>
+</div>
+
 <footer>
   <div class="container">
     <p>Designed & built by Sehal Maheshwari &nbsp;·&nbsp; <a href="mailto:maheshwarisehal27@gmail.com">maheshwarisehal27@gmail.com</a></p>
@@ -834,6 +925,18 @@
   }
 
   // Fix featured card on mobile
+  function openLB(img) {
+    document.getElementById('lb-img').src = img.src;
+    document.getElementById('lb-caption').textContent = img.dataset.caption || img.alt;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLB() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLB(); });
+
   function checkGrid() {
     const featured = document.querySelector('.proj-card.featured');
     if (featured) {
